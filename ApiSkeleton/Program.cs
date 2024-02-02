@@ -34,6 +34,21 @@ app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
+app.Use(async (context, next) =>
+{
+    Console.WriteLine("logic sebelum next.Invoke() dieksekusi di Use method");
+    await next.Invoke();
+    Console.WriteLine("logic setelah next.Invoke() dieksekusi di Use method");
+});
+
+//menambahkan terminal ke pipeline app
+//artinya Run disini selalu dieksekusi setiap melalui pipeline app
+app.Run(async context =>
+{
+    Console.WriteLine("writing response in the Run method");
+    await context.Response.WriteAsync("hello from middleware component");
+});
+
 app.MapControllers();
 
 app.Run();

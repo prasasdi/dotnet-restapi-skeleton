@@ -33,3 +33,4 @@ C:\Users\User\source\repos\RestAPISkeleton\ApiSkeleton\obj\Debug\net8.0\refint\A
 C:\Users\User\source\repos\RestAPISkeleton\ApiSkeleton\obj\Debug\net8.0\ApiSkeleton.pdb
 C:\Users\User\source\repos\RestAPISkeleton\ApiSkeleton\obj\Debug\net8.0\ApiSkeleton.genruntimeconfig.cache
 C:\Users\User\source\repos\RestAPISkeleton\ApiSkeleton\obj\Debug\net8.0\ref\ApiSkeleton.dll
+C:\Users\User\source\repos\RestAPISkeleton\ApiSkeleton\obj\Debug\net8.0\ApiSkeleton.sourcelink.json
