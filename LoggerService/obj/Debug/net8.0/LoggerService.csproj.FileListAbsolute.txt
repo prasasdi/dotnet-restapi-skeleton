@@ -13,3 +13,4 @@ C:\Users\User\source\repos\RestAPISkeleton\LoggerService\obj\Debug\net8.0\Logger
 C:\Users\User\source\repos\RestAPISkeleton\LoggerService\obj\Debug\net8.0\refint\LoggerService.dll
 C:\Users\User\source\repos\RestAPISkeleton\LoggerService\obj\Debug\net8.0\LoggerService.pdb
 C:\Users\User\source\repos\RestAPISkeleton\LoggerService\obj\Debug\net8.0\ref\LoggerService.dll
+C:\Users\User\source\repos\RestAPISkeleton\LoggerService\obj\Debug\net8.0\LoggerService.sourcelink.json
