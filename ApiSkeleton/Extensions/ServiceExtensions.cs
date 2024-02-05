@@ -16,6 +16,8 @@ namespace ApiSkeleton.Extensions
             services.ConfigureCors();
             services.ConfigureIISIntegration();
             services.ConfigureLoggerService();
+
+            services.ConfigureRepositoryManager();
         }
 
         /**
