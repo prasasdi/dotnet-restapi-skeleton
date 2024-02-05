@@ -1,5 +1,7 @@
 ﻿using Contracts;
+using Contracts.Repository.Manager;
 using LoggerService;
+using Repository.Manager;
 
 namespace ApiSkeleton.Extensions
 {
@@ -51,5 +53,14 @@ namespace ApiSkeleton.Extensions
             {
 
             });
+
+        /**
+         * Menambahkan repository, lapisan service yang menangani domain dengan cara menambahkan RepositoryManager pada kontainer
+         * Bukan pada domain repository masing-masing.
+         * 
+         * Jika ada penambahan domain, sertakan juga repository domain pada RepositoryManager
+         */
+        public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
     }
 }
