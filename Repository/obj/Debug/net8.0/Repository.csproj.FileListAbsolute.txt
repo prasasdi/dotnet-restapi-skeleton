@@ -14,3 +14,5 @@ C:\Users\User\source\repos\RestAPISkeleton\Repository\obj\Debug\net8.0\Repositor
 C:\Users\User\source\repos\RestAPISkeleton\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Users\User\source\repos\RestAPISkeleton\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Users\User\source\repos\RestAPISkeleton\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\User\source\repos\RestAPISkeleton\Repository\bin\Debug\net8.0\Contracts.dll
+C:\Users\User\source\repos\RestAPISkeleton\Repository\bin\Debug\net8.0\Contracts.pdb

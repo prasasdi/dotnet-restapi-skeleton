@@ -36,6 +36,23 @@ namespace ApiSkeleton.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ClassGroups");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                            Name = "Kelas 15.A TI"
+                        },
+                        new
+                        {
+                            Id = new Guid("9c78546c-4643-4a3a-8159-e0158ec143b5"),
+                            Name = "Kelas 15.C TI"
+                        },
+                        new
+                        {
+                            Id = new Guid("675dc97f-d97c-41d3-97b1-d07d54cd08a0"),
+                            Name = "Kelas 15.S TI"
+                        });
                 });
 
             modelBuilder.Entity("Entities.Models.ClassMember", b =>
@@ -57,6 +74,26 @@ namespace ApiSkeleton.Migrations
                     b.HasIndex("ClassGroupId");
 
                     b.ToTable("ClassMembers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("d3f844bc-c75c-4c68-bb64-ffab6ae5118a"),
+                            ClassGroupId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                            Name = "Firman Putera"
+                        },
+                        new
+                        {
+                            Id = new Guid("0c25e253-1500-4517-adf6-cc6e422b22ee"),
+                            ClassGroupId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                            Name = "Prasetyo Adi"
+                        },
+                        new
+                        {
+                            Id = new Guid("c6be1873-fd9f-4fda-94f7-117e532cec1c"),
+                            ClassGroupId = new Guid("9c78546c-4643-4a3a-8159-e0158ec143b5"),
+                            Name = "John Dower"
+                        });
                 });
 
             modelBuilder.Entity("Entities.Models.ClassMember", b =>

@@ -10,3 +10,7 @@ C:\Users\User\source\repos\RestAPISkeleton\Contracts\obj\Debug\net8.0\refint\Con
 C:\Users\User\source\repos\RestAPISkeleton\Contracts\obj\Debug\net8.0\Contracts.pdb
 C:\Users\User\source\repos\RestAPISkeleton\Contracts\obj\Debug\net8.0\ref\Contracts.dll
 C:\Users\User\source\repos\RestAPISkeleton\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
+C:\Users\User\source\repos\RestAPISkeleton\Contracts\bin\Debug\net8.0\Entities.dll
+C:\Users\User\source\repos\RestAPISkeleton\Contracts\bin\Debug\net8.0\Entities.pdb
+C:\Users\User\source\repos\RestAPISkeleton\Contracts\obj\Debug\net8.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\RestAPISkeleton\Contracts\obj\Debug\net8.0\Contracts.csproj.CopyComplete
