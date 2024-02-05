@@ -27,7 +27,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

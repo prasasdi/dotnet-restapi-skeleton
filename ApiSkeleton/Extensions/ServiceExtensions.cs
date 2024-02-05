@@ -1,9 +1,12 @@
 ﻿using Contracts;
 using Contracts.Repository.Manager;
 using LoggerService;
+using Microsoft.EntityFrameworkCore;
+using Repository;
 using Repository.Manager;
 using Service.Contracts.Manager;
 using Services.Manager;
+using System.ComponentModel;
 
 namespace ApiSkeleton.Extensions
 {
@@ -76,5 +79,9 @@ namespace ApiSkeleton.Extensions
          */
         public static void ConfigureServiceManager(this IServiceCollection services) =>
             services.AddScoped<IServiceManager, ServiceManager>();
+
+        public static void ConfigurePostgreSQLContext(this IServiceCollection services, IConfiguration configuration) =>
+            services.AddDbContext<RepositoryContext>(opts =>
+                opts.UseNpgsql(configuration.GetConnectionString("sqlconnection")));
     }
 }

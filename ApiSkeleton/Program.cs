@@ -1,4 +1,5 @@
 using ApiSkeleton.Extensions;
+using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.HttpOverrides;
 using NLog;
 
@@ -12,7 +13,17 @@ LogManager.Setup().LoadConfigurationFromFile(string.Concat(Directory.GetCurrentD
 // Posisi middleware extension services ada diatas AddControllers()
 builder.Services.AddServiceExtensions();
 
-builder.Services.AddControllers(); 
+// Register repositoryContext at runtime
+builder.Services.ConfigurePostgreSQLContext(builder.Configuration);
+
+/**
+ * Dengan ditambahnya .Presentation, MainProject (atau ApiSkeleton yang saya kasih nama) disini hanya berfokus menjadi 'kernel' aplikasi saja
+ * Perlu ditambah .AddApplicationPart dan mengarahkan ke x.Presentation
+ * 
+ * Karena nantinya API akan mencari controller hanya didalam x.Presentation
+ */
+builder.Services.AddControllers()
+    .AddApplicationPart(typeof(ApiSkeleton.Presentation.AssemblyReference).Assembly); 
 
 var app = builder.Build();
 

@@ -12,5 +12,8 @@ namespace Repository.Models
     public class ClassGroupRepository : RepositoryBase<ClassGroup>, IClassGroupRepository
     {
         public ClassGroupRepository(RepositoryContext repositoryContext) : base(repositoryContext) { }
+
+        public IEnumerable<ClassGroup> GetAllClassGroups(bool trackChanges) =>
+            FindAll(trackChanges).OrderBy(c => c.Name).ToList();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Contracts.Repository.Manager;
+using Entities.Models;
 using Service.Contracts;
 
 namespace Services
@@ -20,6 +21,19 @@ namespace Services
             _loggerManager = loggerManager;
         }
 
+        public IEnumerable<ClassGroup> GetAllClassGroups(bool trackChanges)
+        {
+            try
+            {
+                var classGroups = _repositoryManager.ClassGroup.GetAllClassGroups(trackChanges);
 
+                return classGroups;
+            }
+            catch (Exception ex)
+            {
+                _loggerManager.LogError($"Something went wrong in the {nameof(GetAllClassGroups)} service method {ex}");
+                throw;
+            }
+        }
     }
 }
