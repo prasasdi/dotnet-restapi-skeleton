@@ -16,6 +16,9 @@ builder.Services.AddServiceExtensions();
 // Register repositoryContext at runtime
 builder.Services.ConfigurePostgreSQLContext(builder.Configuration);
 
+// add maper into application
+builder.Services.AddAutoMapper(typeof(Program));
+
 /**
  * Dengan ditambahnya .Presentation, MainProject (atau ApiSkeleton yang saya kasih nama) disini hanya berfokus menjadi 'kernel' aplikasi saja
  * Perlu ditambah .AddApplicationPart dan mengarahkan ke x.Presentation

@@ -23,7 +23,7 @@ namespace Repository.Configuration
                         Id = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                         Name = "Kelas 15.A TI"
                     },
-                    new ClassGroup
+                    new ClassGroup  
                     {
                         Id = new Guid("9c78546c-4643-4a3a-8159-e0158ec143b5"),
                         Name = "Kelas 15.C TI"

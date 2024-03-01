@@ -8,9 +8,6 @@ using System.Threading.Tasks;
 
 namespace ApiSkeleton.Presentation.Controllers
 {
-    //Contoh route URL
-    //[Route("api/[controller]")]
-
     [Route("api/kelas")]
     [ApiController]
     public class ClassGroupController : ControllerBase
@@ -42,6 +39,13 @@ namespace ApiSkeleton.Presentation.Controllers
                 return StatusCode(500, "Internal server error");
                 throw;
             }
+        }
+
+        [HttpPost("printIni")]
+        public IActionResult PrintThis(string Ini)
+        {
+            Console.WriteLine(Ini);
+            return Ok();
         }
     }
 }

@@ -1,10 +1,11 @@
 ﻿
-using Entities.Models;
+
+using Shared.DataTransferableObject;
 
 namespace Service.Contracts
 {
     public interface IClassGroupService
     {
-        IEnumerable<ClassGroup> GetAllClassGroups(bool trackChanges);
+        IEnumerable<ClassGroupDto> GetAllClassGroups(bool trackChanges);
     }
 }
