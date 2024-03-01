@@ -32,5 +32,16 @@ namespace Services
 
             return classGroupsDto;
         }
+
+        public ClassGroupDto GetClassGroupById(Guid classGroupId, bool trackChanges)
+        {
+            var classGroup = _repositoryManager.ClassGroup.GetClassGroup(classGroupId, trackChanges);
+
+            // check if null here
+
+            var classGroupDto = _mapper.Map<ClassGroupDto>(classGroup);
+
+            return classGroupDto;
+        }
     }
 }

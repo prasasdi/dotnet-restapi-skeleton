@@ -10,6 +10,6 @@ namespace Contracts.Repository
     public interface IClassGroupRepository
     {
         IEnumerable<ClassGroup> GetAllClassGroups(bool trackChanges);
-
+        ClassGroup GetClassGroup(Guid classGroupId, bool trackChanges);
     }
 }

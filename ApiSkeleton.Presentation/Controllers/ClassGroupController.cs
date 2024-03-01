@@ -3,6 +3,7 @@ using Service.Contracts.Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,23 +23,8 @@ namespace ApiSkeleton.Presentation.Controllers
         [HttpGet]
         public IActionResult GetClassGroups()
         {
-            try
-            {
-                var classGroups = _service.GroupClassService.GetAllClassGroups(trackChanges: false);
-
-                return Ok(classGroups);
-            }
-            catch (Exception ex)
-            {
-                /**
-                 * Hayoloooh, bukan cuman asal OK aja
-                 * harus tau tujuan dari tiap respon code 
-                 * 
-                 * Jangan asal jeplah 500 doang ya
-                 */
-                return StatusCode(500, "Internal server error");
-                throw;
-            }
+            var classGroups = _service.GroupClassService.GetAllClassGroups(trackChanges: false);
+            return Ok(classGroups);
         }
 
         [HttpPost("printIni")]
@@ -46,6 +32,13 @@ namespace ApiSkeleton.Presentation.Controllers
         {
             Console.WriteLine(Ini);
             return Ok();
+        }
+
+        [HttpGet("{id:guid}")]
+        public IActionResult GetClassGroup(Guid classGroupId)
+        {
+            var classGroup = _service.GroupClassService.GetClassGroupById(classGroupId, trackChanges: false);
+            return Ok(classGroup);
         }
     }
 }

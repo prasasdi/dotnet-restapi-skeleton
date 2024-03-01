@@ -15,5 +15,8 @@ namespace Repository.Models
 
         public IEnumerable<ClassGroup> GetAllClassGroups(bool trackChanges) =>
             FindAll(trackChanges).OrderBy(c => c.Name).ToList();
+
+        public ClassGroup GetClassGroup(Guid classGroupId, bool trackChanges) =>
+            FindByCondition(c => c.Id.Equals(classGroupId), trackChanges).SingleOrDefault();
     }
 }
