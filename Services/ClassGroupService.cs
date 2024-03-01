@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Contracts;
 using Contracts.Repository.Manager;
+using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
 using Shared.DataTransferableObject;
@@ -37,7 +38,7 @@ namespace Services
         {
             var classGroup = _repositoryManager.ClassGroup.GetClassGroup(classGroupId, trackChanges);
 
-            // check if null here
+            if (classGroup is null) throw new ClassGroupNotFoundException(classGroupId);
 
             var classGroupDto = _mapper.Map<ClassGroupDto>(classGroup);
 
