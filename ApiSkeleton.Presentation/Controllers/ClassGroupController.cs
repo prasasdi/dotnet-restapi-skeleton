@@ -34,7 +34,7 @@ namespace ApiSkeleton.Presentation.Controllers
             return Ok();
         }
 
-        [HttpGet("{id:guid}")]
+        [HttpGet("{classGroupId:guid}")]
         public IActionResult GetClassGroup(Guid classGroupId)
         {
             var classGroup = _service.GroupClassService.GetClassGroupById(classGroupId, trackChanges: false);

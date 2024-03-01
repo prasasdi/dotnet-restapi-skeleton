@@ -25,6 +25,6 @@ namespace Services.Manager
 
         public IClassGroupService GroupClassService => _classGroupService.Value;
 
-        public IClassMemberService GroupMemberService => _classMemberService.Value;
+        public IClassMemberService ClassMemberService => _classMemberService.Value;
     }
 }

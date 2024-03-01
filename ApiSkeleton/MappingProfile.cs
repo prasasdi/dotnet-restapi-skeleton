@@ -11,6 +11,7 @@ namespace ApiSkeleton
         {
             // contoh 1 on 1, gada yang dikasih perintah tambahan jadi begini aja
             CreateMap<ClassGroup, ClassGroupDto>();
+            CreateMap<ClassMember, ClassMemberDto>();
         }
     }
 }
