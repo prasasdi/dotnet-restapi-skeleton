@@ -2,6 +2,7 @@ using ApiSkeleton.Extensions;
 using Contracts;
 using Microsoft.AspNetCore.HttpOverrides;
 using NLog;
+using System.Diagnostics.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +28,9 @@ builder.Services.AddAutoMapper(typeof(Program));
  */
 builder.Services.AddControllers(config => {
     config.RespectBrowserAcceptHeader = true;
+    config.ReturnHttpNotAcceptable = true;
 }).AddXmlDataContractSerializerFormatters()
+.AddCustomCSVFormatter()
 .AddApplicationPart(typeof(ApiSkeleton.Presentation.AssemblyReference).Assembly); 
 
 var app = builder.Build();

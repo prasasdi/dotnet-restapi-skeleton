@@ -6,5 +6,9 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferableObject
 {
-    public record ClassMemberDto (Guid Id, string Name);
+    public record ClassMemberDto()
+    {
+        public Guid Id { get; init; }
+        public string Name { get; init; }
+    }
 }
