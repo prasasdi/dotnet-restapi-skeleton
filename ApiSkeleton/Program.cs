@@ -1,6 +1,5 @@
 using ApiSkeleton.Extensions;
 using Contracts;
-using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.HttpOverrides;
 using NLog;
 
@@ -26,8 +25,10 @@ builder.Services.AddAutoMapper(typeof(Program));
  * 
  * Karena nantinya API akan mencari controller hanya didalam x.Presentation
  */
-builder.Services.AddControllers()
-    .AddApplicationPart(typeof(ApiSkeleton.Presentation.AssemblyReference).Assembly); 
+builder.Services.AddControllers(config => {
+    config.RespectBrowserAcceptHeader = true;
+}).AddXmlDataContractSerializerFormatters()
+.AddApplicationPart(typeof(ApiSkeleton.Presentation.AssemblyReference).Assembly); 
 
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerManager>();
