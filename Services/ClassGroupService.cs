@@ -26,19 +26,11 @@ namespace Services
 
         public IEnumerable<ClassGroupDto> GetAllClassGroups(bool trackChanges)
         {
-            try
-            {
-                var classGroups = _repositoryManager.ClassGroup.GetAllClassGroups(trackChanges);
+            var classGroups = _repositoryManager.ClassGroup.GetAllClassGroups(trackChanges);
 
-                var classGroupsDto = _mapper.Map<IEnumerable<ClassGroupDto>>(classGroups);
+            var classGroupsDto = _mapper.Map<IEnumerable<ClassGroupDto>>(classGroups);
 
-                return classGroupsDto;
-            }
-            catch (Exception ex)
-            {
-                _loggerManager.LogError($"Something went wrong in the {nameof(GetAllClassGroups)} service method {ex}");
-                throw;
-            }
+            return classGroupsDto;
         }
     }
 }

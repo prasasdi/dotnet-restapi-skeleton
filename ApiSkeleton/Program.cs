@@ -1,4 +1,5 @@
 using ApiSkeleton.Extensions;
+using Contracts;
 using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.HttpOverrides;
 using NLog;
@@ -29,10 +30,10 @@ builder.Services.AddControllers()
     .AddApplicationPart(typeof(ApiSkeleton.Presentation.AssemblyReference).Assembly); 
 
 var app = builder.Build();
+var logger = app.Services.GetRequiredService<ILoggerManager>();
+app.ConfigureExceptionHandler(logger);
 
-if (app.Environment.IsDevelopment())
-    app.UseDeveloperExceptionPage();
-else
+if (app.Environment.IsProduction())
     app.UseHsts();
 
 // Configure the HTTP request pipeline.

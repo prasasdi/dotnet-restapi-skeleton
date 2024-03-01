@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="ErrorDetails.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ErrorModel\ErrorDetails.cs" />
+  </ItemGroup>
+
 </Project>
