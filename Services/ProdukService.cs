@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Shared.DataTransferableObject;
+using Entities.Exceptions;
 
 namespace Services
 {
@@ -45,9 +46,10 @@ namespace Services
 
         public ProdukDto GetProductById(Guid ProdukId, bool trackChanges)
         {
-            var Product = _repositoryManager.Produk.GetProductById(ProdukId, trackChanges);
-            var ProductDto = _mapper.Map<ProdukDto>(Product);
-            return ProductDto;
+            var Produk = _repositoryManager.Produk.GetProductById(ProdukId, trackChanges);
+            if (Produk is null) throw new ProdukNotFoundException(ProdukId);
+            var ProdukDto = _mapper.Map<ProdukDto>(Produk);
+            return ProdukDto;
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Exceptions
 {
-    internal class ProdukNotFoundException : NotFoundException
+    public class ProdukNotFoundException : NotFoundException
     {
         public ProdukNotFoundException(Guid id) : base($"Produk with id: {id} doesn't exist in the database.") { }
     }
