@@ -9,7 +9,8 @@ namespace Contracts.Repository
 {
     public interface IKomentarProdukRepository
     {
-        IEnumerable<Komentar> GetAllKomentarByProductId(Guid ProductId, bool trackChanges);
-        void CreateKomentar(Komentar komentar);
+        IEnumerable<Komentar> GetAllKomentarByProdukId(Guid ProdukId, bool trackChanges);
+        Komentar GetKomentarForProduk(Guid ProdukId, Guid KomentarId, bool trackChanges);
+        void CreateKomentar(Guid produkId, Komentar komentar);
     }
 }

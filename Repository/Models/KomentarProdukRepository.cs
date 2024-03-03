@@ -1,5 +1,6 @@
 ﻿using Contracts.Repository;
 using Entities.Models;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +14,16 @@ namespace Repository.Models
         public KomentarProdukRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
-        public void CreateKomentar(Komentar komentar)
+        public void CreateKomentar(Guid produkId, Komentar komentar)
         {
             komentar.CreatedAt = DateTime.UtcNow - new DateTime(1970, 1, 1);
             komentar.ModifiedAt = DateTime.UtcNow - new DateTime(1970, 1, 1);
-            Create(komentar);
+            komentar.IdProduk = produkId;
+            Create(komentar);   
         }
-        public IEnumerable<Komentar> GetAllKomentarByProductId(Guid ProductId, bool trackChanges) =>
-            FindByCondition(k => k.IdProduk.Equals(ProductId), trackChanges).OrderBy(k => k.CreatedAt).ToList();
+        public Komentar GetKomentarForProduk(Guid ProdukId, Guid KomentarId, bool trackChanges) =>
+            FindByCondition(k => k.IdProduk.Equals(ProdukId) && k.Id.Equals(KomentarId), trackChanges).SingleOrDefault();
+        public IEnumerable<Komentar> GetAllKomentarByProdukId(Guid ProdukId, bool trackChanges) =>
+            FindByCondition(k => k.IdProduk.Equals(ProdukId), trackChanges).OrderBy(k => k.CreatedAt).ToList();
     }
 }

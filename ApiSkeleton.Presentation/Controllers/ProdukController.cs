@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service.Contracts.Manager;
+using Shared.DataTransferableObject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,11 +26,21 @@ namespace ApiSkeleton.Presentation.Controllers
             return Ok(produks);
         }
 
-        [HttpGet("id:guid")]
+        [HttpGet("{id:guid}", Name = "GetProdukById")]
         public IActionResult GetProdukById(Guid id)
         {
             var produk = _service.ProdukService.GetProductById(id, false);
             return Ok(produk);
+        }
+
+        [HttpPost]
+        public IActionResult CreateProduk([FromBody] ProdukForCreationDto produk)
+        {
+            if (produk is null) return BadRequest("ProdukForCreationDto object is inull.");
+
+            var createdProduk = _service.ProdukService.CreateProduct(produk);
+
+            return CreatedAtRoute("GetProdukById", new { id = createdProduk.Id }, createdProduk);
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Shared.DataTransferableObject;
 using Entities.Models;
+using Entities.Exceptions;
 
 namespace Services
 {
@@ -23,18 +24,26 @@ namespace Services
             _loggerManager = loggerManager;
             _mapper = mapper;
         }
-
-        public IEnumerable<KomentarDto> GetAllKomentarByProductId(Guid ProductId, bool trackChanges)
+        public KomentarDto GetKomentarForProduk(Guid ProdukId, Guid KomentarId, bool trackChanges)
         {
-            var Komentars = _repositoryManager.Komentar.GetAllKomentarByProductId(ProductId, trackChanges);
+            var komentarEntity = _repositoryManager.Komentar.GetKomentarForProduk(ProdukId, KomentarId, trackChanges);
+            var komentarDto = _mapper.Map<KomentarDto>(komentarEntity);
+            return komentarDto;
+        }
+        public IEnumerable<KomentarDto> GetAllKomentarByProdukId(Guid ProdukId, bool trackChanges)
+        {
+            var Komentars = _repositoryManager.Komentar.GetAllKomentarByProdukId(ProdukId, trackChanges);
             var KomentarsDto = _mapper.Map<IEnumerable<KomentarDto>>(Komentars);
             return KomentarsDto;
         }
-        public KomentarDto CreateKomentar(KomentarForCreationDto komentar)
+        public KomentarDto CreateKomentar(Guid produkId, KomentarForCreationDto komentar, bool trackChanges)
         {
+            var produk = _repositoryManager.Produk.GetProductById(produkId, trackChanges);
+            if (produk is null) throw new ProdukNotFoundException(produkId);
+            
             var komentarEntity = _mapper.Map<Komentar>(komentar);
-
-            _repositoryManager.Komentar.CreateKomentar(komentarEntity);
+            
+            _repositoryManager.Komentar.CreateKomentar(produkId, komentarEntity);
             _repositoryManager.Save();
 
             var komentarForReturn = _mapper.Map<KomentarDto>(komentarEntity);

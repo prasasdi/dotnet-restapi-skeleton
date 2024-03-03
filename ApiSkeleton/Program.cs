@@ -1,6 +1,7 @@
 using ApiSkeleton.Extensions;
 using Contracts;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Mvc;
 using NLog;
 using System.Diagnostics.Contracts;
 
@@ -19,6 +20,11 @@ builder.Services.ConfigurePostgreSQLContext(builder.Configuration);
 
 // add maper into application
 builder.Services.AddAutoMapper(typeof(Program));
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 
 /**
  * Dengan ditambahnya .Presentation, MainProject (atau ApiSkeleton yang saya kasih nama) disini hanya berfokus menjadi 'kernel' aplikasi saja

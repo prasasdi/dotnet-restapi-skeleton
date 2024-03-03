@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferableObject
 {
-    public record ProdukForCreationDto(string Name, int Harga, int Rating);
+    public record ProdukForCreationDto(string Nama, int Harga, int Rating, string Deskripsi);
 }

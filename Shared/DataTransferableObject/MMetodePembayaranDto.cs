@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferableObject
 {
-    public record KomentarDto
+    public record MMetodePembayaranDto
     {
-        public Guid Id { get; init; }
-        public string IsiKomentar { get; init; }
+        public string Nama { get; init; }
+        public string Link { get; init; }
     }
 }

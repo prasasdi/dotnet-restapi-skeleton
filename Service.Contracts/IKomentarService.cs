@@ -9,7 +9,8 @@ namespace Service.Contracts
 {
     public interface IKomentarService
     {
-        IEnumerable<KomentarDto> GetAllKomentarByProductId(Guid ProductId, bool trackChanges);
-        KomentarDto CreateKomentar(KomentarForCreationDto komentar);
+        IEnumerable<KomentarDto> GetAllKomentarByProdukId(Guid ProdukId, bool trackChanges);
+        KomentarDto GetKomentarForProduk(Guid ProdukId, Guid KomentarId, bool trackChanges);
+        KomentarDto CreateKomentar(Guid produkId, KomentarForCreationDto komentar, bool trackChanges);
     }
 }
