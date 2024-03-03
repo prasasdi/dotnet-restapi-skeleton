@@ -15,5 +15,8 @@ namespace Entities.Models
         [ForeignKey(nameof(Produk))]
         public Guid IdProduk { get; set; }
         public Produk? Produk { get; set; }
+
+        public TimeSpan CreatedAt { get; set; }
+        public TimeSpan ModifiedAt { get; set; }
     }
 }

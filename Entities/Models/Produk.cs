@@ -13,6 +13,7 @@ namespace Entities.Models
         public string Nama { get; set; }
         public int Harga { get; set; }
         public int Rating { get; set; }
+        public string Deskripsi { get; set; }
         public TimeSpan CreatedAt { get; set; }
         public TimeSpan ModifiedAt { get; set; }
 
