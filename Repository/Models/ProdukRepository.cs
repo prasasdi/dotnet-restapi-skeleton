@@ -10,8 +10,10 @@ namespace Repository.Models
 {
     public class ProdukRepository : RepositoryBase<Produk>, IProdukRepository
     {
+        private readonly RepositoryContext _repository;
         public ProdukRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
+            _repository = repositoryContext;
         }
 
         public void CreateProduct(Produk produk)

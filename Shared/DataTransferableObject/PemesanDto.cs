@@ -8,6 +8,7 @@ namespace Shared.DataTransferableObject
 {
     public record PemesanDto
     {
+        public Guid Id { get; init; }
         public string Nama { get; init; }
         public string Email { get; init; }
         public string Telephone { get; init; }

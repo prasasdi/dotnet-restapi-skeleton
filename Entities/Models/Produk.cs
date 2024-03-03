@@ -17,5 +17,10 @@ namespace Entities.Models
         public TimeSpan CreatedAt { get; set; }
         public TimeSpan ModifiedAt { get; set; }
 
+        // karena Produk punya banyak koleksi dari Komentar, Antar produk dengan komentar adalah one to many
+        public ICollection<Komentar>? Komentar { get; set; }
+        // dalam satu produk, ada banyak pesanan yang mengarah pada satu produk ini, hubungan antara produk dengan pesanan adalah one to many
+        public ICollection<Pesanan>? Pesanan { get; set; }
+
     }
 }

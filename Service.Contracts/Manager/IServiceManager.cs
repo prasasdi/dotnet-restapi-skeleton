@@ -10,5 +10,6 @@ namespace Service.Contracts.Manager
     {
         IProdukService ProdukService { get; }
         IKomentarService KomentarService { get; }
+        IPemesanService PemesanService { get; }
     }
 }

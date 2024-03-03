@@ -18,5 +18,8 @@ namespace Entities.Models
         public string Alamat { get; set; }
         public TimeSpan CreatedAt { get; set; }
         public TimeSpan ModifiedAt { get; set; }
+
+        // Pemesan punya lebih dari satu pesanan
+        public ICollection<Pesanan>? Pesanan { get; set; }
     }
 }

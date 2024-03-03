@@ -18,7 +18,9 @@ namespace Entities.Models
         
         [ForeignKey(nameof(Pemesan))]
         public Guid IdPemesan { get; set; }
+        // // beda dengan pemesan, karna secara harifiah pesanan adalah anak-anak dari pemesan
         public Pemesan? Pemesan { get; set; }
+        // satu pesanan yang dimiliki pemesan, bisa lebih dari satu produk. Hubungan antara pesanan dengan produk adalah one to many
         public Produk? Produk { get; set; }
     }
 }

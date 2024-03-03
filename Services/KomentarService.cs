@@ -27,6 +27,8 @@ namespace Services
         public KomentarDto GetKomentarForProduk(Guid ProdukId, Guid KomentarId, bool trackChanges)
         {
             var komentarEntity = _repositoryManager.Komentar.GetKomentarForProduk(ProdukId, KomentarId, trackChanges);
+            if (komentarEntity is null) throw new KomentarNotfoundException(KomentarId);
+
             var komentarDto = _mapper.Map<KomentarDto>(komentarEntity);
             return komentarDto;
         }

@@ -15,6 +15,10 @@ namespace ApiSkeleton
             CreateMap<ProdukForCreationDto, Produk>();
             CreateMap<Komentar, KomentarDto>();
             CreateMap<KomentarForCreationDto, Komentar>();
+            CreateMap<Pemesan, PemesanDto>();
+            CreateMap<PemesanForCreationDto, Pemesan>();
+            CreateMap<Pesanan, PesananDto>();
+            CreateMap<PesananForCreationDto, Pesanan>();
         }
     }
 }

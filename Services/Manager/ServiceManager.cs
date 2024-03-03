@@ -16,14 +16,17 @@ namespace Services.Manager
     {
         private readonly Lazy<IProdukService> _produkService;
         private readonly Lazy<IKomentarService> _komentarService;
+        private readonly Lazy<IPemesanService> _pemesanService;
 
         public ServiceManager(IRepositoryManager repositoryManager, ILoggerManager logger, IMapper mapper)
         {
             _produkService = new Lazy<IProdukService>(() => new ProdukService(repositoryManager, logger, mapper));
             _komentarService = new Lazy<IKomentarService>(() => new KomentarService(repositoryManager, logger, mapper));
+            _pemesanService = new Lazy<IPemesanService>(() => new PemesanService(repositoryManager, logger, mapper));
         }
 
         public IProdukService ProdukService => _produkService.Value;
         public IKomentarService KomentarService => _komentarService.Value;
+        public IPemesanService PemesanService => _pemesanService.Value;
     }
 }

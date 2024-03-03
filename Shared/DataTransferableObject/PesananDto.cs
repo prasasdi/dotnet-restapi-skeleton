@@ -9,6 +9,7 @@ namespace Shared.DataTransferableObject
 {
     public record PesananDto
     {
+        public Guid Id { get; init; }
         public char Tipe { get; init; }
         public char Ukuran { get; init; }
     }
