@@ -14,23 +14,15 @@ namespace Services.Manager
 {
     public class ServiceManager : IServiceManager
     {
-        private readonly Lazy<IClassGroupService> _classGroupService;
-        private readonly Lazy<IClassMemberService> _classMemberService;
         private readonly Lazy<IProdukService> _produkService;
         private readonly Lazy<IKomentarService> _komentarService;
 
         public ServiceManager(IRepositoryManager repositoryManager, ILoggerManager logger, IMapper mapper)
         {
-
-            _classGroupService = new Lazy<IClassGroupService>(() => new ClassGroupService(repositoryManager, logger, mapper));
-            _classMemberService = new Lazy<IClassMemberService>(() => new ClassMemberService(repositoryManager, logger, mapper));
-
             _produkService = new Lazy<IProdukService>(() => new ProdukService(repositoryManager, logger, mapper));
-            _komentarService = new Lazy<IKomentarService>(() => KomentarService(repositoryManager, logger, mapper));
+            _komentarService = new Lazy<IKomentarService>(() => new KomentarService(repositoryManager, logger, mapper));
         }
 
-        public IClassGroupService GroupClassService => _classGroupService.Value;
-        public IClassMemberService ClassMemberService => _classMemberService.Value;
         public IProdukService ProdukService => _produkService.Value;
         public IKomentarService KomentarService => _komentarService.Value;
     }

@@ -20,25 +20,25 @@ namespace ApiSkeleton.Presentation.Controllers
             _service = service;
         }
 
-        [HttpGet]
-        public IActionResult GetClassGroups()
-        {
-            var classGroups = _service.GroupClassService.GetAllClassGroups(trackChanges: false);
-            return Ok(classGroups);
-        }
+        //[HttpGet]
+        //public IActionResult GetClassGroups()
+        //{
+        //    var classGroups = _service.GroupClassService.GetAllClassGroups(trackChanges: false);
+        //    return Ok(classGroups);
+        //}
 
-        [HttpPost("printIni")]
-        public IActionResult PrintThis(string Ini)
-        {
-            Console.WriteLine(Ini);
-            return Ok();
-        }
+        //[HttpPost("printIni")]
+        //public IActionResult PrintThis(string Ini)
+        //{
+        //    Console.WriteLine(Ini);
+        //    return Ok();
+        //}
 
-        [HttpGet("{classGroupId:guid}")]
-        public IActionResult GetClassGroup(Guid classGroupId)
-        {
-            var classGroup = _service.GroupClassService.GetClassGroupById(classGroupId, trackChanges: false);
-            return Ok(classGroup);
-        }
+        //[HttpGet("{classGroupId:guid}")]
+        //public IActionResult GetClassGroup(Guid classGroupId)
+        //{
+        //    var classGroup = _service.GroupClassService.GetClassGroupById(classGroupId, trackChanges: false);
+        //    return Ok(classGroup);
+        //}
     }
 }

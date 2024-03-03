@@ -8,8 +8,6 @@ namespace Contracts.Repository.Manager
 {
     public interface IRepositoryManager
     {
-        IClassGroupRepository ClassGroup { get; }
-        IClassMemberRepository ClassMember { get; }
         IProdukRepository Produk { get; }
         IPemesanRepository Pemesan { get; }
         IPesananRepository Pesanan { get; }

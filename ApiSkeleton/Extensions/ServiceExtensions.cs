@@ -1,5 +1,4 @@
-﻿using ApiSkeleton.Formatters;
-using Contracts;
+﻿using Contracts;
 using Contracts.Repository.Manager;
 using LoggerService;
 using Microsoft.EntityFrameworkCore;
@@ -86,7 +85,7 @@ namespace ApiSkeleton.Extensions
                 opts.UseNpgsql(configuration.GetConnectionString("sqlconnection")));
 
         // kalau mau tambah, nanti diganti nama fungsinya jadi apa
-        public static IMvcBuilder AddCustomCSVFormatter(this IMvcBuilder builder) =>
-            builder.AddMvcOptions(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
+        //public static IMvcBuilder AddCustomCSVFormatter(this IMvcBuilder builder) =>
+        //    builder.AddMvcOptions(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
     }
 }

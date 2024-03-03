@@ -30,7 +30,7 @@ builder.Services.AddControllers(config => {
     config.RespectBrowserAcceptHeader = true;
     config.ReturnHttpNotAcceptable = true;
 }).AddXmlDataContractSerializerFormatters()
-.AddCustomCSVFormatter()
+//.AddCustomCSVFormatter()
 .AddApplicationPart(typeof(ApiSkeleton.Presentation.AssemblyReference).Assembly); 
 
 var app = builder.Build();

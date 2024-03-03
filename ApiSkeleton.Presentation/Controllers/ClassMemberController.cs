@@ -19,18 +19,18 @@ namespace ApiSkeleton.Presentation.Controllers
             _service = service;
         }
 
-        [HttpGet]
-        public IActionResult GetClassMembersForClassGroup(Guid classGroupId)
-        {
-            var classMembers = _service.ClassMemberService.GetClassMembers(classGroupId, false);
-            return Ok(classMembers);
-        }
+        //[HttpGet]
+        //public IActionResult GetClassMembersForClassGroup(Guid classGroupId)
+        //{
+        //    var classMembers = _service.ClassMemberService.GetClassMembers(classGroupId, false);
+        //    return Ok(classMembers);
+        //}
 
-        [HttpGet("{classMemberId:guid}")]
-        public IActionResult GetClassMemberForClassGroup(Guid classGroupId, Guid classMemberId)
-        {
-            var classMember = _service.ClassMemberService.GetClassMember(classGroupId, classMemberId, false);
-            return Ok(classMember);
-        }
+        //[HttpGet("{classMemberId:guid}")]
+        //public IActionResult GetClassMemberForClassGroup(Guid classGroupId, Guid classMemberId)
+        //{
+        //    var classMember = _service.ClassMemberService.GetClassMember(classGroupId, classMemberId, false);
+        //    return Ok(classMember);
+        //}
     }
 }

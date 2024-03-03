@@ -8,8 +8,6 @@ namespace Service.Contracts.Manager
 {
     public interface IServiceManager
     {
-        IClassGroupService GroupClassService { get; }
-        IClassMemberService ClassMemberService { get; }
         IProdukService ProdukService { get; }
         IKomentarService KomentarService { get; }
     }
