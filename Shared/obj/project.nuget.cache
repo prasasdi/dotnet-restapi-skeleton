@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8QvoXrjYCuS6icFdzONsRjpk1i1Zo5pcyX+nTTqLX5p6ZJEOnfsllc1SLE7F4ZXZwEEwhyCZFC/ESpn5xxZSNg==",
+  "dgSpecHash": "a63f5cbbJj/0WTBFgk91QnPKpKbZP9lqcI1Zu5ryXdwCieUJ2XkfIanFcS5we4jYqQkP42J9AhHU3cTzSyOuhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Shared\\Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

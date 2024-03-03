@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

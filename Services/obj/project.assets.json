@@ -386,11 +386,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Services\\Services.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Services\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -407,11 +407,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Contracts\\Contracts.csproj"
+            "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Contracts\\Contracts.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj"
+            "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj"
             }
           }
         }

@@ -14,11 +14,14 @@ namespace Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new ClassGroupConfiguration());
-            modelBuilder.ApplyConfiguration(new ClassMemberConfiguration());
         }
 
         public DbSet<ClassGroup>? ClassGroups { get; set; }
         public DbSet<ClassMember>? ClassMembers { get; set; }   
+
+        public DbSet<Pemesan> Pemesan { get; set; }
+        public DbSet<Pesanan> Pesanan { get; set; }
+        public DbSet<Produk> Produk { get; set; }
+        public DbSet<Komentar> KomentarProduk { get; set; }
     }
 }

@@ -4807,11 +4807,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton\\ApiSkeleton.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton\\ApiSkeleton.csproj",
       "projectName": "ApiSkeleton",
-      "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton\\ApiSkeleton.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton\\ApiSkeleton.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4828,20 +4828,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj"
+            "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\LoggerService\\LoggerService.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\LoggerService\\LoggerService.csproj"
+            "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\LoggerService\\LoggerService.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\LoggerService\\LoggerService.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Repository\\Repository.csproj"
+            "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Repository\\Repository.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj"
+            "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Services\\Services.csproj"
+            "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Services\\Services.csproj"
             }
           }
         }

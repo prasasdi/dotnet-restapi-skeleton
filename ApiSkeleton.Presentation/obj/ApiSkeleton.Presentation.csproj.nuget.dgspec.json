@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj": {}
+    "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj": {
+    "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj",
         "projectName": "ApiSkeleton.Presentation",
-        "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton.Presentation\\ApiSkeleton.Presentation.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\ApiSkeleton.Presentation\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\ApiSkeleton.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj": {
+    "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj": {
+    "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj",
         "projectName": "Service.Contracts",
-        "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\Service.Contracts.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Service.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -148,11 +148,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Entities\\Entities.csproj"
+              "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Shared\\Shared.csproj"
+              "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Shared\\Shared.csproj"
               }
             }
           }
@@ -186,14 +186,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Shared\\Shared.csproj": {
+    "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\RestAPISkeleton\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

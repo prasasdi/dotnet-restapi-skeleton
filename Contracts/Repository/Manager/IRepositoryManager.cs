@@ -10,6 +10,10 @@ namespace Contracts.Repository.Manager
     {
         IClassGroupRepository ClassGroup { get; }
         IClassMemberRepository ClassMember { get; }
+        IProdukRepository Produk { get; }
+        IPemesanRepository Pemesan { get; }
+        IPesananRepository Pesanan { get; }
+        IKomentarProdukRepository Komentar { get; }
         void Save();
     }
 }
