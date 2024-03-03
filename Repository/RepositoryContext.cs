@@ -14,6 +14,7 @@ namespace Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new ProdukConfiguration());
         }
 
         public DbSet<Pemesan> Pemesan { get; set; }
