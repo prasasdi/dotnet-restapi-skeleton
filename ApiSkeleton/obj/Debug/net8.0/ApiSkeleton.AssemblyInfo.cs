@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiSkeleton")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8eb18ec2de6f99d173c5661c5d20ed99e390d66f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+411e42b6ba74700b9e8d9e3d424b61048655184c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiSkeleton")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiSkeleton")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

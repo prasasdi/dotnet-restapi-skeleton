@@ -12,12 +12,15 @@ namespace Entities.Models
         public Guid Id { get; set; }
         public char Tipe { get; set; }
         public char Ukuran { get; set; }
+        public int Jumlah { get; set; }
 
         [ForeignKey(nameof(Produk))]
         public Guid IdProduk { get; set; }
         
         [ForeignKey(nameof(Pemesan))]
         public Guid IdPemesan { get; set; }
+        public TimeSpan CreatedAt { get; set; }
+        public TimeSpan ModifiedAt { get; set; }
         // // beda dengan pemesan, karna secara harifiah pesanan adalah anak-anak dari pemesan
         public Pemesan? Pemesan { get; set; }
         // satu pesanan yang dimiliki pemesan, bisa lebih dari satu produk. Hubungan antara pesanan dengan produk adalah one to many

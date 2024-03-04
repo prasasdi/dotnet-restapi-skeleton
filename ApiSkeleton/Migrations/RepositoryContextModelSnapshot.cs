@@ -98,11 +98,20 @@ namespace ApiSkeleton.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<TimeSpan>("CreatedAt")
+                        .HasColumnType("interval");
+
                     b.Property<Guid>("IdPemesan")
                         .HasColumnType("uuid");
 
                     b.Property<Guid>("IdProduk")
                         .HasColumnType("uuid");
+
+                    b.Property<int>("Jumlah")
+                        .HasColumnType("integer");
+
+                    b.Property<TimeSpan>("ModifiedAt")
+                        .HasColumnType("interval");
 
                     b.Property<char>("Tipe")
                         .HasColumnType("character(1)");
@@ -152,5010 +161,5010 @@ namespace ApiSkeleton.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("18c46480-d9dc-40f8-9ba9-6e090c0cf62b"),
+                            Id = new Guid("6b795f92-dd00-4108-a2ed-188bb0add6df"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 710647,
+                            Harga = 858069,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Kelas A - 1",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("7119893c-550e-4bd1-a90b-7c45d87f32ac"),
+                            Id = new Guid("c48873fe-4ddd-460c-9ec7-668a40da888a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 739850,
+                            Harga = 510993,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Kelas A - 2",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("341e2be8-86e9-4d49-9be2-d87072527abe"),
+                            Id = new Guid("75b622b6-d5cb-4b1d-a8e5-ca8ccf6e16d4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 853671,
+                            Harga = 674111,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Kelas A - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("86a791bc-4e24-4eb2-8017-a45af8f656c7"),
+                            Id = new Guid("09121d25-5ad2-40a8-a821-5bdb62098360"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 537204,
+                            Harga = 569194,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Kelas A - 4",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("c15058f3-5b34-4d8b-bdb4-11f29996dec0"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 535290,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AB Kelas A - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("b786a392-7431-4d5e-b87d-70009f7605d2"),
+                            Id = new Guid("73fcee2a-5d67-49dc-bbb0-ee22d92754eb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 528944,
+                            Harga = 923805,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AB Kelas B - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("1aeb689d-a1fc-415d-97ff-d6b73952cd0e"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 881153,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AB Kelas B - 2",
+                            Nama = "Model AB Kelas A - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("b1da5b65-ae8d-4f48-a5ab-d447a4f3542b"),
+                            Id = new Guid("7eda5043-7c4c-4e23-ab65-d31739bcd150"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 828283,
+                            Harga = 778451,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model AB Kelas B - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("7dcf18b1-84ef-4e2f-a9b4-ddf39a965fb1"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 686301,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model AB Kelas B - 2",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("df70cd23-9ca7-4106-95d5-c7d61b95eb5a"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 647596,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Kelas B - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("7469f228-ce3a-415a-864c-2413085d88ee"),
+                            Id = new Guid("31666c01-873f-47ca-99e5-9eea3f7f1a8d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 777653,
+                            Harga = 711810,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Kelas B - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("8b0327ef-bae9-4474-9d36-8ae1609c20a3"),
+                            Id = new Guid("cc9d54d8-bfcd-45bc-a54b-07c4e79feb40"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 852430,
+                            Harga = 665025,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Kelas B - 5",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("cb7083fb-b6f0-459e-9eeb-deccdc2aa0c0"),
+                            Id = new Guid("1d537a55-f9b1-47b5-af9c-82a35e3b59e0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 676044,
+                            Harga = 953166,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Special Edition - 1",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("831b7371-458c-4087-a669-15df492b7136"),
+                            Id = new Guid("188dcd14-55b0-4b0b-898c-6f4268d52648"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 696316,
+                            Harga = 979392,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Special Edition - 2",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("5792ed09-9b24-4643-9c72-b5dd3380df8e"),
+                            Id = new Guid("da40ed5b-f3e1-4eef-bc27-c096f6c114dd"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 685431,
+                            Harga = 966376,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Special Edition - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("3fe48533-1808-4b5c-8101-b084e8dec022"),
+                            Id = new Guid("bf381117-7157-44e9-8fe1-24623907cafb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 814142,
+                            Harga = 641593,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Special Edition - 4",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("a1150c08-23a0-4467-8fa6-b7892470877d"),
+                            Id = new Guid("d986747a-a380-4574-89a5-4a04de9a84eb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 869971,
+                            Harga = 685255,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Special Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("6af64bf1-02a5-411f-a2fe-e309e9e1fa8a"),
+                            Id = new Guid("aea84a72-e842-46ad-86f1-5ce7acd1c5ad"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 875832,
+                            Harga = 935081,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Limited Edition - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("1a27004b-3bf0-4461-b9ec-1ce5a765ef3a"),
+                            Id = new Guid("358d150a-73b1-4f1c-978a-4365d0bd4981"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 909617,
+                            Harga = 718262,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Limited Edition - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("eb60a58a-50d0-468d-87cf-1debec2caf0e"),
+                            Id = new Guid("77bd265e-cdd4-458c-97e7-b6ebb241e58d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 697465,
+                            Harga = 615270,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Limited Edition - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("35e66ecd-2adb-4308-8821-dc2de44f2bec"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 763550,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model AB Limited Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("ee368bcd-8b11-4be6-85c3-2b194e064f38"),
+                            Id = new Guid("f52eb37e-9c65-4ad2-8c05-4a4ce84ea8a7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 669746,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AB Limited Edition - 4",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("277ffe7d-f186-46ac-ba75-bb37450c6ca7"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 881570,
+                            Harga = 869473,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AB Limited Edition - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("e40f06fa-f50b-4987-9301-38f164697c52"),
+                            Id = new Guid("58a982df-07c8-4239-975b-c1a9e571a2af"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 952649,
+                            Harga = 525433,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Kelas A - 1",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("b6137169-2e8a-46ed-b57c-f681852e7d50"),
+                            Id = new Guid("1728d396-8da0-4c73-a3fc-be4ebd13fe2b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 915124,
+                            Harga = 670492,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Kelas A - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("8704bca2-ad91-46e2-94b2-d573e9292d0e"),
+                            Id = new Guid("7cee39ba-4e76-47c0-a821-f51c513492c5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 600245,
+                            Harga = 692009,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Kelas A - 3",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("34844c6c-6c9c-402f-bbf3-e6da51cb1961"),
+                            Id = new Guid("31f337fd-be2a-4acd-9984-5a09c72cf309"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 613003,
+                            Harga = 896889,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Kelas A - 4",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("be1764f3-1e99-4eff-a7f5-59e41605c5fb"),
+                            Id = new Guid("834a012b-d0d2-4519-a85b-ea076e20d405"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 521490,
+                            Harga = 858946,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Kelas A - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d9dc9eef-dcf2-4831-b3a1-66a55cda2d73"),
+                            Id = new Guid("2a252cab-e264-4a3c-8ae4-1c15ba547208"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 902115,
+                            Harga = 888910,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Kelas B - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("928a2c60-35e4-4906-a24b-8528d29a27c4"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 507849,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AA Kelas B - 2",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("82c3ad63-99fb-4a22-b1b8-8a51a25efc0a"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 838532,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AA Kelas B - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("285bf2a2-c910-45d9-b095-be07f0faa765"),
+                            Id = new Guid("baa1e6ce-9a53-4a05-a627-e05537a2fe0c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 570094,
+                            Harga = 939884,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AA Kelas B - 4",
+                            Nama = "Model AA Kelas B - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("e6ebabc4-a744-4ac9-8961-18f021c41457"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 831951,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model AA Kelas B - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("e4bfb07b-0c02-482e-9542-ca10d71fbd5d"),
+                            Id = new Guid("96e6c066-8054-49f6-835e-6f0f5942f3a1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 869254,
+                            Harga = 618541,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model AA Kelas B - 4",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("c8757510-c7f4-4700-9e72-5b4f9161b574"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 899312,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Kelas B - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("0301fbcb-1661-4ab1-aab5-a62e2eeb952a"),
+                            Id = new Guid("4b16d123-027b-4852-b35e-f6bbbfa84643"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 899908,
+                            Harga = 967104,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Special Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d6f5c920-9598-44ad-93d5-9e7688a38c19"),
+                            Id = new Guid("6fd29f57-fd35-487b-b2ae-a2ad80509bce"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 707482,
+                            Harga = 618048,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Special Edition - 2",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("061be14d-e6e7-47b9-97e6-665bb029853a"),
+                            Id = new Guid("2aff716a-7064-4ec3-8328-612712a79fa4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 553753,
+                            Harga = 990830,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Special Edition - 3",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("e7879d95-bf6f-47cd-96a6-d9e030d3a9a8"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 986804,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AA Special Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f31eef0a-dc75-420a-a7e2-fbc7e01d187e"),
+                            Id = new Guid("d3633b58-9cb3-427e-b87c-71ab7ebc39ae"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 854336,
+                            Harga = 618090,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model AA Special Edition - 5",
+                            Nama = "Model AA Special Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("fe18c17b-1579-400f-a5b1-11bb46af6257"),
+                            Id = new Guid("8ff399f2-0993-4b4e-968c-9772a417c54e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 815071,
+                            Harga = 766712,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model AA Special Edition - 5",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("4c837fae-e1b8-49e2-bf06-0216d330ffe5"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 510810,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Limited Edition - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("55871719-fc69-43a5-b631-9601a1396a43"),
+                            Id = new Guid("929878d4-c88e-4254-bc9a-795dacfd861c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 506824,
+                            Harga = 515228,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Limited Edition - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("8feeb364-2508-491d-9452-59f5ee813225"),
+                            Id = new Guid("e26dcaaf-784f-4dc0-b76d-3fd44d5e2c3f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 568832,
+                            Harga = 666136,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Limited Edition - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("09da3ac3-6408-48f7-90cc-076d92d9af55"),
+                            Id = new Guid("259f7bb7-2f87-4c10-a4bf-609ee79d741f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 963618,
+                            Harga = 767101,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Limited Edition - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("4aca0502-c99a-4d8a-893f-e15fed3b90ed"),
+                            Id = new Guid("effc3337-fe5e-4651-9f0e-2f7ca629c624"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 589660,
+                            Harga = 765267,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model AA Limited Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("90852f2d-fd97-44ed-a12f-d72f83e672fd"),
+                            Id = new Guid("0397b0ec-6e35-4153-b43a-692cc6a0a901"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 615680,
+                            Harga = 530785,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas A - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("74e94db3-301c-4166-9fab-43413b850633"),
+                            Id = new Guid("9e65c3ca-6698-4f01-baad-53b11fbb3461"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 823185,
+                            Harga = 600492,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas A - 2",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("7ff5879b-eeef-46d1-9218-ab95bd22d35a"),
+                            Id = new Guid("94fd25fd-aa3c-4f3d-8876-2ee9230f1f6c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 577059,
+                            Harga = 700183,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas A - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("38109807-5499-43df-8eef-c07fffe3d984"),
+                            Id = new Guid("345f2ec0-7ffa-498b-bb6c-fb6d5bfe0fe4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 741750,
+                            Harga = 996156,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas A - 4",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("745dcc09-cbae-4d1a-908c-5e525f5886d2"),
+                            Id = new Guid("e4b63cb2-eddb-44df-abb4-0efeef9c09f1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 816370,
+                            Harga = 648724,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas A - 5",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("d166262c-9e51-440c-b660-2a20753d8ee5"),
+                            Id = new Guid("e719e32d-e430-4aab-96f0-34466e9675c5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 784141,
+                            Harga = 562247,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas B - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("8a576cf4-db98-44c4-99f2-5caa7868e186"),
+                            Id = new Guid("9d5fddf7-d24a-4d47-9dcc-e43bf81198d6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 524907,
+                            Harga = 516886,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas B - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("83c58aab-f1ba-465d-a872-086ce7b74516"),
+                            Id = new Guid("1ae6d260-dcd0-472a-962a-fddf4405967c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 923718,
+                            Harga = 722468,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas B - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("fee67642-b51e-472c-bb09-bc0a8bd39dec"),
+                            Id = new Guid("5c1f613d-e602-4893-be4a-a1ef5874a63d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 993062,
+                            Harga = 745556,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas B - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6fddde8e-c478-4444-96f4-2b9b15335e7f"),
+                            Id = new Guid("42069e7f-82ae-4fbb-bc53-ee97e1582a3b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 624742,
+                            Harga = 599196,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Kelas B - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("cca664d5-c65e-401f-bb88-6d92b0623f35"),
+                            Id = new Guid("08a65d69-3fd8-4dac-b844-6df8a860991f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 594517,
+                            Harga = 897102,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Special Edition - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("fd876044-1ef5-4ddf-a055-5e7ffdafcf68"),
+                            Id = new Guid("693e6068-e9c2-4639-9269-9fdbf84fd477"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 645302,
+                            Harga = 548192,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Special Edition - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("4b2c2546-28a5-4230-afd0-c6d419b22bc9"),
+                            Id = new Guid("4607e356-ea29-4231-ae4c-96dfd752b1f2"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 918657,
+                            Harga = 637826,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Special Edition - 3",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("4d70b4f4-36f0-4335-b501-3263000d6a9d"),
+                            Id = new Guid("bcc11890-b063-4bc7-8f2e-cdb399bb8479"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 744162,
+                            Harga = 541534,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Special Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("4cce09fd-d6e7-4130-a8fe-23b1b44bc886"),
+                            Id = new Guid("3d701341-d897-408d-ac25-1a7c1e075702"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 503918,
+                            Harga = 869152,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Special Edition - 5",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("9fff4085-d158-4c08-b1d5-d92f1998be90"),
+                            Id = new Guid("fa2c2650-e590-4f15-a2cc-2c86a13f7469"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 988344,
+                            Harga = 721390,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Limited Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("2e95ddc0-b5e1-46a7-b2d7-6fe1b5920bc7"),
+                            Id = new Guid("65d9ca7c-31f2-454a-9b44-947bf88fb911"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 859027,
+                            Harga = 787016,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Limited Edition - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("878655db-3907-47e7-9834-76972298766f"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 869052,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model X1 Limited Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("be925fa0-e1b6-454a-8399-292513fc0626"),
+                            Id = new Guid("7f6a8f28-b793-4e0f-953d-98c867fcf558"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 612913,
+                            Harga = 892711,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model X1 Limited Edition - 3",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("66f20059-0389-4099-bccd-fcaa94dd44de"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 953737,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Limited Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("a9b54314-e209-4ed4-9a83-262d550c50a4"),
+                            Id = new Guid("939f494c-04db-4336-ac3f-f20ab0846979"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 745487,
+                            Harga = 531683,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model X1 Limited Edition - 5",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("254bced8-272c-4457-ab04-e27a52c58afd"),
+                            Id = new Guid("ea242602-4e56-4702-9c0a-1d860176ca67"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 829254,
+                            Harga = 503101,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas A - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("5e992f0f-ad07-4a3d-bd66-386a4d083175"),
+                            Id = new Guid("0a83adc0-769d-4fcd-876a-3ec9215f132f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 500180,
+                            Harga = 587658,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas A - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("469deb42-63ff-4f69-a74c-2d10b032dfe0"),
+                            Id = new Guid("d972327a-636f-4763-a5cb-0e1986e46deb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 805237,
+                            Harga = 806715,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas A - 3",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("91bb2ce9-1804-431f-9f07-5933a46a9806"),
+                            Id = new Guid("78a8cc5d-ded6-48d2-9f93-65e32004fb22"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 628097,
+                            Harga = 837611,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas A - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("bb8d5b94-a77e-43a1-888a-a660f65253d0"),
+                            Id = new Guid("834f5cb5-f37e-4ffb-a270-acdcacf97e8d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 768291,
+                            Harga = 812402,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas A - 5",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("ce29e609-48fd-4b41-bbfd-a9950f037016"),
+                            Id = new Guid("294c3a6a-80f3-4972-8ea5-4c381b28ef97"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 508616,
+                            Harga = 504787,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas B - 1",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("c32bd3d6-88fa-4546-ac89-9f4dbe67d589"),
+                            Id = new Guid("68d0a9a9-567e-42da-bee2-5599c0c53eec"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 571720,
+                            Harga = 892976,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas B - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("da8a3ec4-10c3-4632-81ea-d205b034731d"),
+                            Id = new Guid("514717be-1dae-4419-a48b-62c4539132f5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 805197,
+                            Harga = 724283,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas B - 3",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("a7ee43ae-49cc-44e8-817f-60688061577b"),
+                            Id = new Guid("a32f645b-559b-43ef-a24b-a16c75f7ae5a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 874910,
+                            Harga = 855399,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas B - 4",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("32ef30d8-491e-4e50-827f-0f8ec6e0404a"),
+                            Id = new Guid("097d3359-eb7b-4a2d-9052-394b06958e00"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 705384,
+                            Harga = 982240,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Kelas B - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("2d4545f1-322d-4768-8027-d2b8ab1d0c40"),
+                            Id = new Guid("79cd399c-79a9-45bf-aa8c-1188bba3f882"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 941196,
+                            Harga = 825240,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Special Edition - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("131a693e-006c-434c-845c-c249049bdd1e"),
+                            Id = new Guid("7032dcbd-abcb-47cc-8d23-5bede05c37f0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 651015,
+                            Harga = 747336,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Special Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("07ff4e07-77e1-43b3-9d55-478f93154969"),
+                            Id = new Guid("42a46110-a3de-46d0-b3a5-dadaab72c596"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 653596,
+                            Harga = 920127,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Special Edition - 3",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("dd64818f-ef82-4266-bc82-40ea37b5e487"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 673431,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Pro Special Edition - 4",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("4865858b-be6e-4964-bd0b-91c35f746e0a"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 736285,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Pro Special Edition - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("12d2e2b3-7fa0-4beb-b45c-436a15ea9098"),
+                            Id = new Guid("40802361-5c81-4abe-8d21-464e562f487b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 516344,
+                            Harga = 834109,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Pro Special Edition - 4",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("172d39a4-e1e2-4f4c-a867-9a1ddfea3290"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 682237,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Pro Special Edition - 5",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("d699833f-8011-4526-b173-686eb0863dd4"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 875399,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Limited Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("8c407314-02d0-4621-b9a2-0d0e33c26a65"),
+                            Id = new Guid("bb321eb6-5741-4ef5-b812-5cfd49bb4c5b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 598211,
+                            Harga = 549458,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Limited Edition - 2",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("2303f5bb-a8cd-4146-a530-b540bbc8fae3"),
+                            Id = new Guid("ec07c4f2-4576-43b7-95b8-f2e96b6e2839"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 917783,
+                            Harga = 991601,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Limited Edition - 3",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("4b9d1537-ea41-4df2-acce-d0228146bda2"),
+                            Id = new Guid("9ff8e6f0-508f-4833-80a0-f961aa65f69e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 924496,
+                            Harga = 682217,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Limited Edition - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("783bb203-0b30-43d7-b140-f96d6c4bbdb9"),
+                            Id = new Guid("ae0c1c9b-eac6-488d-9b1e-a9164982eef2"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 533593,
+                            Harga = 609056,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Pro Limited Edition - 5",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("4f2d653f-2a93-4a01-8d4b-36fcbba227b6"),
+                            Id = new Guid("273cfd97-0b3f-48c4-a5ce-16d769909476"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 897961,
+                            Harga = 884917,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Kelas A - 1",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("929e3cad-8a92-4436-b8b2-0f01e338c5e6"),
+                            Id = new Guid("81d2ebf6-6d65-4b72-a2f9-a8b34713a618"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 796668,
+                            Harga = 628789,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Kelas A - 2",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("052ef5f3-f78c-4e53-b6ce-d5fceb3a4b15"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 723772,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Kelas A - 3",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("60a31cb9-6b93-4237-8e80-aa1e77c0dbf8"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 857037,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Kelas A - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("c974d660-dba3-4387-b11a-772b21e6ec39"),
+                            Id = new Guid("b99d7f1b-7018-450d-b95f-91de45c8c158"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 625915,
+                            Harga = 790215,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Kelas A - 5",
+                            Nama = "Model Ultra Kelas A - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6dd328e9-01fb-4de7-b60a-a6b27f71b796"),
+                            Id = new Guid("15467da4-d726-4071-8a9d-e13da3f412fb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 750327,
+                            Harga = 760765,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Kelas B - 1",
-                            Rating = 3
+                            Nama = "Model Ultra Kelas A - 4",
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("38e8e80a-be3b-4e61-880c-6b27ac628ab5"),
+                            Id = new Guid("6593bec7-0c82-4d0a-a51f-038310bb9135"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 582964,
+                            Harga = 538429,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Ultra Kelas A - 5",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("aca29736-c72e-4f5f-a697-a5aa9862d13c"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 939373,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Ultra Kelas B - 1",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("26fde136-0005-46f2-823e-aba12691cfe5"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 530849,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Kelas B - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("6aaeb399-5c7d-4509-99a9-96bdffeba8f9"),
+                            Id = new Guid("ee2926c6-f54c-4702-a8c2-96b8577357d4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 632235,
+                            Harga = 687303,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Kelas B - 3",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("db263a69-4b70-4e67-a9c8-0b8a0d328405"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 827471,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Ultra Kelas B - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("4f306db1-61a7-478a-9fb0-69c91ba44ca7"),
+                            Id = new Guid("f3720907-4ef7-4547-9dbd-ed68d2992fa9"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 677967,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Kelas B - 4",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("73a969c1-dba7-4c55-8935-d43be7fe592b"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 997019,
+                            Harga = 872789,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Kelas B - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("1959e7bb-9741-4c2d-b0cd-6eb63b819d81"),
+                            Id = new Guid("ec322d57-bc54-46d7-8922-a1713d7eb270"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 602327,
+                            Harga = 988321,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Special Edition - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("6abd33e5-08fd-48f7-89dc-b188e0bb08f3"),
+                            Id = new Guid("d9836e8b-82e5-4060-9b67-8d97cbeb8c34"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 553420,
+                            Harga = 535251,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Special Edition - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("3dfe7297-f0b8-407c-b715-01f491f56a0f"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 754095,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Special Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("14a99cb0-a22c-49fa-a4ca-0d6046a969f4"),
+                            Id = new Guid("20504e7a-687a-41fd-a735-e5bd49b0c91d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 828876,
+                            Harga = 697541,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Ultra Special Edition - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("db188c32-1614-47d2-88ed-4ee5db7e202e"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 515455,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Special Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("0f113f5d-060a-435b-b16b-913850b29fc1"),
+                            Id = new Guid("c8ebc477-d369-4005-b30e-6c57c0f67c34"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 564029,
+                            Harga = 549997,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Special Edition - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("619b3960-73f8-4997-a9f5-5fcb9a9757b4"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 670682,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Ultra Limited Edition - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("33e1868f-ef7b-42d6-a53e-22f8d989e370"),
+                            Id = new Guid("41f4435b-d5a5-4ba6-b836-0f7af3991777"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 919793,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Limited Edition - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("4474a38b-10f3-44d6-81ae-b3ad6702674d"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 666101,
+                            Harga = 583086,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Limited Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("c71cfe00-5be1-49ca-ac88-5b0c9b845fc5"),
+                            Id = new Guid("3f92ba3d-201f-4c24-8be4-56bd6fef4246"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 555229,
+                            Harga = 993353,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Model Ultra Limited Edition - 3",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("b7dfc4e2-7a5d-4d93-879c-b29a478fbd79"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 636359,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Limited Edition - 4",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("d33c0216-b95b-4804-8187-9839363bbb46"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 892679,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Model Ultra Limited Edition - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("0d0f5e02-eead-49f2-a53c-ac665e0d71a2"),
+                            Id = new Guid("7b9e95cd-bc31-4ba8-b1a4-e820061be014"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 527097,
+                            Harga = 769637,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Ultra Limited Edition - 4",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("fc0b2b48-8a1d-4109-970a-86604c420d0e"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 991107,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Model Ultra Limited Edition - 5",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("fe3e9114-58bb-4e45-afb8-849ff54e3432"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 695482,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Kelas A - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("34ede8d0-ba64-455f-8a2a-1de5736ec028"),
+                            Id = new Guid("2b67b923-b5fb-4d2f-8197-2fb67d24de36"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 852008,
+                            Harga = 799859,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Kelas A - 2",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("43650081-90c6-4009-abf7-79f3b134f869"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 510067,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AB Kelas A - 3",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("77482604-e6cb-4753-8c71-aad30189cecc"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 858201,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AB Kelas A - 4",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("0a2a1a69-3272-4bb3-89d4-974200e9c3ec"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 862286,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AB Kelas A - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("809235f8-a16e-4a85-b547-875b63f6114f"),
+                            Id = new Guid("e41ea0ae-84f1-4395-979a-70802a0b7446"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 774766,
+                            Harga = 608543,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AB Kelas B - 1",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("3c0ab6f9-4a93-4b76-a4b5-f6b0f30ccad8"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 867977,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AB Kelas B - 2",
+                            Nama = "Classic AB Kelas A - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("4ef1395d-ff7b-4c6c-88a6-84634216d764"),
+                            Id = new Guid("14b9a8db-66d5-4b53-9c99-033d80940e13"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 792727,
+                            Harga = 601821,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AB Kelas A - 4",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("36bd1b4c-7e70-4c3b-b17a-284db970c1b6"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 755839,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AB Kelas A - 5",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("06dc5a3d-8d69-437f-b4d6-1876c8350f80"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 765402,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AB Kelas B - 1",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("e883df27-4092-42be-94a9-a50fa842e88b"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 919193,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AB Kelas B - 2",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("0686e2a9-beda-4958-ad6c-37a15407d05a"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 693530,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Kelas B - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("e47760ee-866f-4017-946a-657959d40f4b"),
+                            Id = new Guid("7e32b57d-042d-4206-8024-d5805618d000"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 789092,
+                            Harga = 762147,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Kelas B - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("bea29f4b-c3f9-4bbc-b78e-e82da08f0adf"),
+                            Id = new Guid("5bf148d1-ecde-49df-b3ec-41084e3fa2c6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 635927,
+                            Harga = 977809,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Kelas B - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f4b5761e-b887-422b-a33a-5d2e7cf81b20"),
+                            Id = new Guid("60aea23a-ec17-465a-829e-b961cd919b77"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 794421,
+                            Harga = 741281,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Special Edition - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("fa9cc732-3a29-4e74-8913-b16326967deb"),
+                            Id = new Guid("565b073c-33cd-43c2-9d3a-1308d4ee963b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 824552,
+                            Harga = 610154,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Special Edition - 2",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("ec047c31-fc17-47db-8484-d9c9a9af6af1"),
+                            Id = new Guid("aed413e8-3b76-44bd-bd3b-de5890e2ef0b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 626108,
+                            Harga = 669569,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Special Edition - 3",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("00780bc4-4a0f-4907-9e90-cf5af58e1881"),
+                            Id = new Guid("109da8b6-ae7b-402c-8af2-cf6c3fd63298"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 759671,
+                            Harga = 566407,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Special Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("4b23f8b8-f13c-4547-8b21-c86f601afdae"),
+                            Id = new Guid("2d66d3a3-c562-4953-835f-f33f906e949b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 888113,
+                            Harga = 536102,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Special Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("faf4bd0e-2c63-4a93-a67f-f780f4e77562"),
+                            Id = new Guid("d8dea00c-eeee-46aa-82af-5d40d328f3fd"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 671137,
+                            Harga = 939700,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Limited Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("8a793cf9-2dca-469b-b4aa-14bf2287d4c9"),
+                            Id = new Guid("b5661784-167f-4d38-886f-b8b2022d4949"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 967710,
+                            Harga = 990633,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Limited Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("8ed14318-4f77-46ed-b95f-b326b4f4e173"),
+                            Id = new Guid("20e44bfa-a155-414f-9265-27c7f4b14b16"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 506946,
+                            Harga = 728747,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AB Limited Edition - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("88a4f8ad-ac26-46ac-8ac8-49307098cb9e"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 730937,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AB Limited Edition - 4",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("aedf0ea2-e1d6-4bad-8db4-a00de9ef2e7b"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 868850,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AB Limited Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("1953faea-6634-4065-b008-f8d65feb2a15"),
+                            Id = new Guid("57585312-4d3d-4f80-a8f6-11d792a79f11"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 775096,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AB Limited Edition - 4",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("7e019ad3-6f2c-4d3e-a8aa-0b0e4b3357e1"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 505689,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AB Limited Edition - 5",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("195920a8-a63a-450c-ac8b-032a878d615c"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 739498,
+                            Harga = 680368,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Kelas A - 1",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("03f49a87-7516-4802-a94d-a36532446d09"),
+                            Id = new Guid("a65eba62-f062-4ee5-8848-4d506698af17"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 935180,
+                            Harga = 675033,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Kelas A - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("0c1e02d0-67d4-464f-b329-ab956e7a0933"),
+                            Id = new Guid("7d4083af-0ce2-4458-b185-e8991a762ca8"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 781191,
+                            Harga = 625905,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Kelas A - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("008d510b-7dc4-4ff6-9a80-264b92d99318"),
+                            Id = new Guid("ac1b3353-1dab-4b18-8966-ca2f92658298"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 960267,
+                            Harga = 931672,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Kelas A - 4",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("2988e757-060a-4084-b986-e20ddab5d4fb"),
+                            Id = new Guid("bafe5b4e-9d85-47aa-8705-891a029d9a54"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 706224,
+                            Harga = 551385,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Kelas A - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("bef999a5-103f-4f68-8ae9-16897e234c06"),
+                            Id = new Guid("eeb51950-fcfe-4a46-8cc5-3a6c4fb40576"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 596479,
+                            Harga = 807222,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Kelas B - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("5ffe62ae-3bd0-458e-add0-a0e200c0eb3c"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 667083,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AA Kelas B - 2",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("f5c234f9-8e42-45c7-a5c8-6774b9b5283a"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 577714,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AA Kelas B - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("91d9a5f9-6995-491d-840b-55c715149298"),
+                            Id = new Guid("349705ef-8b86-4f90-9e7c-feaa1b166f4b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 956011,
+                            Harga = 658923,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AA Kelas B - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("d4879d85-ebc7-46bb-99bd-9c051f32fdac"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 826963,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AA Kelas B - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("93d1fc3f-9d16-4478-99f6-a934ed98d816"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 655367,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Kelas B - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("a059034b-be41-47ba-abec-9607b6152767"),
+                            Id = new Guid("2bd8a02f-92df-4f38-b568-1713db3e1708"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 680700,
+                            Harga = 944744,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Kelas B - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("1b298b39-bbfe-4199-abec-17f830323dda"),
+                            Id = new Guid("c7a3b615-713d-47c6-a8ab-5e74204aed17"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 701393,
+                            Harga = 792026,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Special Edition - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("30e29c95-bcf1-4764-b03b-1d094d5b6192"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 840031,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AA Special Edition - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("a3d9a56c-5a11-421c-9d74-6607cc5ea992"),
+                            Id = new Guid("fe14471c-0f11-4ce4-af1b-5d1e62f46d1d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 695913,
+                            Harga = 643658,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AA Special Edition - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("3bff6de0-e4d0-4448-8565-61262d56a07d"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 793671,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Special Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("07853aa1-dd1d-49de-bb00-411b492403af"),
+                            Id = new Guid("c2406ff8-56c3-482e-83b1-642fefc0b1e6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 521584,
+                            Harga = 828611,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Special Edition - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6cb5d7ec-d1a0-45d4-bc55-539fb596794b"),
+                            Id = new Guid("8e3bb5c4-4669-4ffb-b1ad-4b7135431244"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 943182,
+                            Harga = 507117,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Special Edition - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("2a8e4977-f4c5-447e-a4d0-198af36d38d3"),
+                            Id = new Guid("1688a435-c6ec-4521-b3f9-c6e359fc7521"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 996796,
+                            Harga = 546849,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Limited Edition - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("c54d686c-6cce-41e4-b9a9-5e0c01001c65"),
+                            Id = new Guid("21b4b911-bb06-480d-a077-0d61d0e41797"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 574956,
+                            Harga = 838621,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Limited Edition - 2",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("69a3d8a2-7fac-484b-b1a9-1e5819720016"),
+                            Id = new Guid("c26cdafa-c16a-48aa-a3fe-32296a8e3301"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 908495,
+                            Harga = 829302,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Limited Edition - 3",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("53213d21-a528-4f68-a52d-53777cc1af35"),
+                            Id = new Guid("57445b94-6bea-4fef-bdcc-1db2fab50e32"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 655234,
+                            Harga = 868732,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic AA Limited Edition - 4",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("4f6cec1d-9049-4d6d-a7d8-47d149a3a23c"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 632125,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic AA Limited Edition - 5",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("e30b0b3a-f63e-493f-a115-03c5b9b2b08d"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 529087,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic X1 Kelas A - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("d2e92337-4475-4b65-8cb0-1e60162dee8b"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 518564,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic X1 Kelas A - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("7f115f92-0ac9-43a6-a3c6-f57fad2215e4"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 992692,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic X1 Kelas A - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("b7777947-4acb-494e-829e-3927ed5a3711"),
+                            Id = new Guid("8e1861a9-482d-4cb6-9c30-6e59ba7cee3b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 677848,
+                            Harga = 843253,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic AA Limited Edition - 5",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("e5d2aa15-bed1-4c46-923b-3e2e7f969bf7"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 918858,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic X1 Kelas A - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("5457bc71-7e26-45c0-a636-49327c75fd64"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 754870,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic X1 Kelas A - 2",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("0d9c1a97-c57c-43e3-8102-05410a7fb232"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 676799,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic X1 Kelas A - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("69161f83-2f84-4dd4-b548-5a6f89e7634d"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 739715,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Kelas A - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("0bc4f5f3-4bbf-4f31-9f60-08f590761c3a"),
+                            Id = new Guid("556df63a-0d6a-4e71-9c9b-1f1bed6c8214"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 632235,
+                            Harga = 933685,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Kelas A - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f7393bb2-6021-4fb3-9f73-aa6d706b0e46"),
+                            Id = new Guid("d94c82b7-ddcf-412b-969a-b671c97f697e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 940434,
+                            Harga = 898527,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Kelas B - 1",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("1b11b3ae-23d0-4632-8689-0b465550b63b"),
+                            Id = new Guid("d8d9c947-3043-4414-ad9d-918775d26d6a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 885560,
+                            Harga = 819085,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Kelas B - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("de085912-b408-4919-a536-589d51531a35"),
+                            Id = new Guid("e098ef96-fb6c-4431-8cf5-5e75f6afbded"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 733280,
+                            Harga = 780972,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Kelas B - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("4b2fd40a-f090-46f9-b16d-156923078194"),
+                            Id = new Guid("d1385a4a-b3b2-4023-bbeb-a6f416acb2c4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 822240,
+                            Harga = 602657,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Kelas B - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("ad45f9a7-dbe6-4a7c-be29-1d4211135bdd"),
+                            Id = new Guid("04fdb39b-2f91-491f-b662-56bb595ffea4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 977123,
+                            Harga = 738559,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Kelas B - 5",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("cff1403f-6c1a-40e0-803e-0339a7b86207"),
+                            Id = new Guid("52a69dde-8c45-4a2c-89e3-660c0a971778"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 836196,
+                            Harga = 557806,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Special Edition - 1",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("07bec19e-e9cc-40a2-a449-2294ec43c6a6"),
+                            Id = new Guid("3e2057b4-1ecf-4e7f-9c60-1518eda80b21"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 873025,
+                            Harga = 973068,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Special Edition - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("2e7a049d-5c4c-40e1-a8eb-94026ebd8bdc"),
+                            Id = new Guid("8d6b54c2-a2cd-4527-bc9c-56e053cdc2d9"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 726651,
+                            Harga = 750984,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Special Edition - 3",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("1e1d8710-6c90-421a-8587-6b5d3cd01046"),
+                            Id = new Guid("6fb68bc9-049a-45f0-819f-227d308815f1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 732547,
+                            Harga = 503285,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Special Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("5ca50c26-9f91-4ac0-ac48-a3ae83344709"),
+                            Id = new Guid("793942fa-ce85-4362-b1f4-3656e97e22c1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 875017,
+                            Harga = 582787,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Special Edition - 5",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("71b32e02-2f4b-4461-9ca4-a74567ddb9aa"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 916983,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic X1 Limited Edition - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("2687f465-aa46-4765-8adc-274ac0111c32"),
+                            Id = new Guid("7eb8838f-8143-4455-a248-5036eb76a764"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 675940,
+                            Harga = 907652,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic X1 Limited Edition - 2",
-                            Rating = 3
+                            Nama = "Classic X1 Limited Edition - 1",
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("dbb78f0e-be04-42bf-8490-0159c83c6540"),
+                            Id = new Guid("599810ee-949e-4cac-bb6e-3553cfec1c6c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 841717,
+                            Harga = 620222,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic X1 Limited Edition - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("f8fdd23d-2df8-424b-a810-74a7bd0331be"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 844498,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Limited Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("34ddc99b-0451-43b2-b5c1-33df900eac21"),
+                            Id = new Guid("201d88ff-868d-4e9d-aab0-327ffca8f6ac"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 773441,
+                            Harga = 637322,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic X1 Limited Edition - 4",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("784cc4e9-d823-4acb-b330-e0582ae7f6d2"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 751765,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic X1 Limited Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("16e4e91b-aa14-44c2-b433-122a487c893b"),
+                            Id = new Guid("b3d7f90f-3e60-447b-bdde-19b3bf5167ff"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 867648,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic X1 Limited Edition - 5",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("28c06eb5-968e-4df7-b299-c9bcd2c1b0ba"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 641966,
+                            Harga = 624017,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas A - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d3e83e95-a019-4436-93a3-66d21b4dea22"),
+                            Id = new Guid("0febfd6b-b076-498b-a89e-33c22d76900e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 782494,
+                            Harga = 888251,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas A - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("38161bdf-1e3e-4cf3-bfcb-e9a2d11bff3f"),
+                            Id = new Guid("89a49051-7b1a-42e1-93fe-ca3dcf5968e6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 815728,
+                            Harga = 999908,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas A - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f8d275c4-66ab-4892-8d3f-43564e0c7488"),
+                            Id = new Guid("730087c4-3000-438a-a866-208652ddf54d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 685016,
+                            Harga = 676445,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas A - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("a6db8292-7be4-41e1-8d28-bea7d2e19bcf"),
+                            Id = new Guid("0a829bba-1bdd-4814-8855-1c48204a8815"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 590467,
+                            Harga = 908762,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas A - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6c92093f-1f6c-4ff5-b7dc-394ffad6725c"),
+                            Id = new Guid("78079a26-7bc5-4a0d-a6b2-6796a564eb3b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 682039,
+                            Harga = 617626,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas B - 1",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6d8fce78-9973-4e18-8d48-c48ea8ae0076"),
+                            Id = new Guid("a56e51bd-3d53-44ed-beb0-64f6d9694f6c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 635591,
+                            Harga = 657976,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas B - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("94c3f4e4-437c-4853-936e-9c541d6f7d80"),
+                            Id = new Guid("5f2b391a-9769-4a5d-8f6f-a997697c6646"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 894555,
+                            Harga = 546577,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas B - 3",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("6fc523de-c105-41c3-a070-7bb0613ff15f"),
+                            Id = new Guid("cf732b8b-4306-4459-ab99-aa54bb1a44f4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 842173,
+                            Harga = 892012,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas B - 4",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("510401ad-ba77-442d-b3b7-2f77a6d0e678"),
+                            Id = new Guid("5546d9e1-61d7-4032-b49c-2a03b4533975"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 604256,
+                            Harga = 677211,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Kelas B - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("f96ced8d-15b8-4144-b5dc-d8b359416e25"),
+                            Id = new Guid("dfc6bc0f-f78c-4620-a7f3-1bb43803810e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 587231,
+                            Harga = 974935,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Special Edition - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("1c836270-c11f-48b4-8d35-1ec09b6059f4"),
+                            Id = new Guid("e7bde93e-0ed1-4afe-a3fe-5bdd79fb02bf"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 792162,
+                            Harga = 966063,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Special Edition - 2",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("0726065e-4eff-4088-8192-16bbb0f6a848"),
+                            Id = new Guid("38456abf-8983-4a3f-8769-19d6b0033a09"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 912137,
+                            Harga = 555477,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Special Edition - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("80adc88e-5124-4036-ab18-0a8bebcd0b75"),
+                            Id = new Guid("cc51e8ac-7db7-468b-91f7-870aff80b874"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 721392,
+                            Harga = 877775,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Special Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("30455775-68a0-43a1-b5f6-463f6761b96d"),
+                            Id = new Guid("7c8f0be6-b769-498f-9e95-cb427ac8cc34"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 768565,
+                            Harga = 756752,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Special Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("5d8fe336-883a-41e0-a9ac-8913e324e3a3"),
+                            Id = new Guid("d8bee038-9759-4cf4-8d4b-1bb3851ac7c7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 942290,
+                            Harga = 737463,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Limited Edition - 1",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("c27af264-e0df-4c30-8b48-fc47cb65c3dc"),
+                            Id = new Guid("78d09894-5528-4c97-b7d5-1f53cc435261"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 830431,
+                            Harga = 615500,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Limited Edition - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("a5446f3c-53f6-4eac-b452-cd1fc81f7ee9"),
+                            Id = new Guid("5e8f8dc9-6c26-468a-b328-f40a4a007bdb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 616262,
+                            Harga = 944594,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Pro Limited Edition - 3",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("432d4dd0-b9fd-4f37-8c89-c17c0ef7f3c6"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 539426,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic Pro Limited Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("2b2715de-69db-47b9-b778-5a3c0a702e23"),
+                            Id = new Guid("f712dc1f-4fd3-4de4-a222-29638f7cb994"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 737133,
+                            Harga = 659461,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic Pro Limited Edition - 5",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("5e0d07a9-95da-440f-957c-0cfe83fcb56c"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 523119,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic Ultra Kelas A - 1",
+                            Nama = "Classic Pro Limited Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("81e1e5ce-7af6-4528-b9ca-e2225b6f3643"),
+                            Id = new Guid("574e0d7a-1ff9-443a-bd5e-9f063ae99061"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 905958,
+                            Harga = 561467,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic Pro Limited Edition - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("f6923c38-2448-44e1-9d82-22e56ff57df9"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 665454,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic Ultra Kelas A - 1",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("da5fe97e-9d9f-453d-b7e5-d6ab08bc2091"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 969885,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Kelas A - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f8a3c949-c14d-4f4b-8291-e14b9ddfe9d8"),
+                            Id = new Guid("f5e43019-55b3-4b04-9daa-de828c178af2"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 996110,
+                            Harga = 746750,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Kelas A - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("1079aa3a-abda-45d9-8d3d-a70b171ee930"),
+                            Id = new Guid("fc1ce455-420b-4b04-8925-48295cd55bc7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 785185,
+                            Harga = 687193,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Kelas A - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("200ed91c-ec09-4682-979d-82370a1bb3d4"),
+                            Id = new Guid("c2e48e27-9724-483c-9ec5-6865fb0bb00b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 783799,
+                            Harga = 933983,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Kelas A - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d072db1c-de97-45f7-a908-97e0d28a5773"),
+                            Id = new Guid("009f18c2-0fd1-4633-83bd-c20f2a73cd55"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 913033,
+                            Harga = 702143,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Kelas B - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("2ce931a1-06f2-403b-9411-1e964ac7f697"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 811517,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Classic Ultra Kelas B - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("a8d69106-6e59-4fb3-9e65-818e3fdfa0b5"),
+                            Id = new Guid("7e7dbac1-d345-47af-a36b-6f689af8a67b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 920220,
+                            Harga = 675585,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Classic Ultra Kelas B - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("ed791d2d-b946-4f4b-95eb-5a0090197b1a"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 807187,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Kelas B - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("e34513db-bc36-464c-a452-3b2cf65eccf4"),
+                            Id = new Guid("951bc103-e215-4364-9c1a-ad91f3fbc96a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 692920,
+                            Harga = 883798,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Kelas B - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("11b50b54-9c19-48cd-a367-e3faa3e03b42"),
+                            Id = new Guid("8377c030-3532-4f3b-afc7-3fe3b20ab217"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 848407,
+                            Harga = 678229,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Kelas B - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("5aa8816b-7b4e-47a6-a662-0b051d87e395"),
+                            Id = new Guid("ab50e884-2952-47bf-aa87-af0fda3103e6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 627800,
+                            Harga = 944128,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Special Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("1e77f7f7-43d3-417f-a2be-26650c31b67b"),
+                            Id = new Guid("e448393d-c459-4f40-93f2-5783b7d005ae"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 733826,
+                            Harga = 919608,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Special Edition - 2",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("e8466ba2-e294-4e12-b505-2804e8aee43d"),
+                            Id = new Guid("546a8d28-f85a-4f26-af37-21d7337c2227"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 620050,
+                            Harga = 946287,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Special Edition - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("5a5135a5-c3e3-4dc6-afcb-7295d6b1bc11"),
+                            Id = new Guid("f09430b3-b4f1-4185-9191-09265b119ef2"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 506189,
+                            Harga = 581753,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Special Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("82bd8a1d-56a8-4783-b9e8-b3a304ea7a56"),
+                            Id = new Guid("af23d5f0-6a23-4a24-987b-4468ea5a13fe"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 598370,
+                            Harga = 670044,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Special Edition - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("ceefac59-706e-4cfc-b369-7f0415b90e6d"),
+                            Id = new Guid("c8d70e05-fb63-4b6f-8c92-6d17a6fa31d0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 941732,
+                            Harga = 759305,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Limited Edition - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("5211d06a-528f-414f-aeca-1e0fd90a08f3"),
+                            Id = new Guid("ac9fc6ab-4d22-4207-93f9-e2158780d68e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 624017,
+                            Harga = 590699,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Limited Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d59158b3-1cd1-49e1-a863-02de0e446a21"),
+                            Id = new Guid("39976dda-4e08-42af-8e83-61af2a892cf1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 698065,
+                            Harga = 783011,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Limited Edition - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("426c68df-a8fd-4e64-856c-81fb8490c49e"),
+                            Id = new Guid("e844cfea-6ea8-4a04-ba7d-fc5420766293"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 808521,
+                            Harga = 539166,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Limited Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("5571756b-3851-4a0e-9063-25cbace18dd2"),
+                            Id = new Guid("aec91183-c51f-4cfa-8b78-b86eb3861430"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 606718,
+                            Harga = 589518,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Classic Ultra Limited Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("99c3e86b-3a22-4136-81a5-46d7bc0aff86"),
+                            Id = new Guid("3f2c8a9e-c3a3-47eb-bef7-c8499f0d06a8"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 673701,
+                            Harga = 841770,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Kelas A - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("3a7d5499-942a-4878-a567-50719ca4ed1c"),
+                            Id = new Guid("9399c9c5-3e0a-4322-82db-0be31f2dc066"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 928842,
+                            Harga = 841445,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Kelas A - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("8fb985ca-5831-4c22-8c47-2290b8c4b578"),
+                            Id = new Guid("9014f438-43ee-4fe2-9c18-a2bf462dbf68"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 776521,
+                            Harga = 772432,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Kelas A - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("64b593b7-c739-4f87-9c63-814cd79aed84"),
+                            Id = new Guid("f07244c7-1a9b-4656-baf2-7a41aca15533"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 569136,
+                            Harga = 809117,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Kelas A - 4",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("cabe86e3-d424-4b49-ae7c-9485dc104984"),
+                            Id = new Guid("0201a1f9-54de-484f-b27c-7993644840f5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 990623,
+                            Harga = 732662,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Kelas A - 5",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("6cd07798-dc68-4170-a090-0bb434f44e57"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 716265,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AB Kelas B - 1",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("deed764b-ef04-48ab-8a04-cd18912a626a"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 771218,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AB Kelas B - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("e02132e9-338a-4f1c-9b0b-c0dbcbd52f7f"),
+                            Id = new Guid("893c2381-a6bc-450d-966e-5843883438db"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 579729,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AB Kelas B - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("a3af2423-c815-48dd-8c1c-09c4fdc1543e"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 735039,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AB Kelas B - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("508abaef-724c-4ce1-923e-cb733bcfe644"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 651007,
+                            Harga = 939156,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Kelas B - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("eaeec7b7-be5a-4fff-b115-8f6c5a10a438"),
+                            Id = new Guid("69f775ae-0a82-4064-8998-256d3706ad97"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 832937,
+                            Harga = 659696,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Kelas B - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("1d763b1a-7425-436e-91d9-f8b77a581bcf"),
+                            Id = new Guid("9d6378c1-fb88-4212-a2c4-cf6af036f784"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 642963,
+                            Harga = 999375,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Kelas B - 5",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("423c6046-b2e7-4d0e-b1ad-469c67565616"),
+                            Id = new Guid("a44f2bc7-2765-432a-9aaa-feae31210554"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 631204,
+                            Harga = 865225,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Special Edition - 1",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("439db417-777b-4424-b41b-b2a81019b4da"),
+                            Id = new Guid("db61b698-e4fe-499b-bbc8-d3c2e1457414"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 635696,
+                            Harga = 628007,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Special Edition - 2",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("4352a249-c78b-494d-b4c5-505bebcd3000"),
+                            Id = new Guid("78895ecb-986c-4d02-9edb-ccd33df2edc9"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 877555,
+                            Harga = 562039,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Special Edition - 3",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("fe988754-8359-4fbd-a220-5df221e57a8b"),
+                            Id = new Guid("0e23e343-6275-4ce2-8a4d-6563f1329a7b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 697083,
+                            Harga = 675360,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Special Edition - 4",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("955dfc30-7867-4f76-8215-706538a25463"),
+                            Id = new Guid("4b876773-376e-4605-8d82-4f40284348a8"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 699941,
+                            Harga = 597205,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Special Edition - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("bea7fde2-9d8a-4146-8e0f-1dd1631e5a5a"),
+                            Id = new Guid("99a0344a-f14e-41b6-9860-4a56c6f4c708"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 885552,
+                            Harga = 992045,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AB Limited Edition - 1",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("98e21dca-22d0-4e11-abdb-d4d99a4bc9cc"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 526494,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AB Limited Edition - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("420153c8-bbd1-4725-8487-e61c40df7dfe"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 562409,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AB Limited Edition - 3",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("c725d810-79b5-4913-b9ff-d0adfe566103"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 631034,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AB Limited Edition - 4",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("8ff6689b-d986-4d83-8f3a-04220d2136fd"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 587757,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AB Limited Edition - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("4345ffb7-61d5-416c-84e1-5505c9f8de2d"),
+                            Id = new Guid("4f153ce6-5020-43e7-a9c6-980a5234e407"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 962187,
+                            Harga = 682073,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AB Limited Edition - 2",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("c19bbbe2-f56c-4d90-b6ed-e5e2062d588b"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 592840,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AB Limited Edition - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("d39d2ad6-07e0-4288-8773-cec11f2436fc"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 982235,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AB Limited Edition - 4",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("e3dd1086-0f12-4a8c-b7fd-c3c7e0f3f1a1"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 964320,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AB Limited Edition - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("fa5d6e4c-fc89-40fd-83de-7be666f7d581"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 843180,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Kelas A - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("9ab17ad4-8aeb-49d2-acea-f0cd6986c33a"),
+                            Id = new Guid("d82d8e55-9d2e-4b55-8e0c-a3eab65b54ec"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 506149,
+                            Harga = 642872,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Kelas A - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("a80cf1dd-56db-4406-861c-bbc39249ade2"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 939760,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Kelas A - 3",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("1a669db6-f13f-41f4-8940-f5a163a632ff"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 791315,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Kelas A - 4",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("329ffdca-b0f8-48b9-ae1f-a6f7cdd4a23b"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 548715,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Kelas A - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("e68bd6b0-38f4-475c-92d1-55bdce7c3f16"),
+                            Id = new Guid("9f832801-a4e3-46de-b56f-d66d696edacd"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 828778,
+                            Harga = 704685,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Kelas A - 3",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("b601ae0f-2bb0-4036-b0b0-b1e9376372d1"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 946504,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Kelas A - 4",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("cbc4d2a5-b3a3-496c-8e95-a8e4d41c5ad8"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 715570,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Kelas A - 5",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("c48f6709-7ed9-4e74-9143-10b29c7f318e"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 526625,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Kelas B - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("580ee8db-47c4-4775-89c1-7d78b695c533"),
+                            Id = new Guid("c9015421-8cb2-4c56-b2f3-95194619f8fa"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 522389,
+                            Harga = 632697,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Kelas B - 2",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("c138e9a0-8945-474c-852c-10a409385a49"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 775726,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Kelas B - 3",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("dc9ae5ad-95e0-427b-980a-2fe10531ed8a"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 818486,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Kelas B - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("0b1e0217-e4e0-4f03-b669-e2fff9d7e199"),
+                            Id = new Guid("4807b051-d013-45ca-871c-7acc8ea26544"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 511230,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Kelas B - 3",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("8b698228-a6ed-4b33-8104-039c40509d47"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 915531,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Kelas B - 4",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("24e04edc-49fa-4765-a197-0d6a4111fec9"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 592568,
+                            Harga = 860589,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Kelas B - 5",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("6f2ff252-8e67-4387-b95b-09a3a9494c25"),
+                            Id = new Guid("a86a6339-813b-4a24-8518-fa49016707e6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 991820,
+                            Harga = 811256,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Special Edition - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("951d18d6-b1dc-4990-9174-40a88338a228"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 768779,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Special Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6d8c6ab9-1b42-4115-adca-3ed6d5cad0c6"),
+                            Id = new Guid("a603dd35-7ce5-4dff-a4fb-712ae1fa8f42"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 679484,
+                            Harga = 731375,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Special Edition - 2",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("3cd86373-31ad-4581-8a93-ae19b57714ec"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 711217,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Special Edition - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("a1aa7e84-a835-42e7-8fb3-e8f88523dbc5"),
+                            Id = new Guid("58e6c0d8-464d-4449-ba5e-e070381fe36f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 564535,
+                            Harga = 933816,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Special Edition - 4",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("b7215e3e-50eb-4085-9a6d-df5354d435e9"),
+                            Id = new Guid("7b9d1396-23a4-4d02-aace-59c41e60ee8b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 992738,
+                            Harga = 988095,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Special Edition - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("ae91d12e-301d-44cd-9ce8-6f9a02158df1"),
+                            Id = new Guid("46b08f7a-c914-409a-a2f1-7b09122762b3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 798871,
+                            Harga = 833809,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium AA Limited Edition - 1",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("4ffa5427-b4cd-40c1-abc5-9bf5fb1191e1"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 529122,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Limited Edition - 2",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("68071448-afa1-4b6d-b767-99ca76d44895"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 924444,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Limited Edition - 3",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("80914a49-e270-4322-b748-d4a72f6ff34b"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 822873,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Limited Edition - 4",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("f85acfcd-3a04-4761-9300-c612dec47133"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 712061,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium AA Limited Edition - 5",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("ed1a0bf9-c673-4e5e-bcab-f012e8dbe60b"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 541887,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium X1 Kelas A - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("9e1b987b-ddf6-4bb9-9540-ea2c74e6671a"),
+                            Id = new Guid("1d6287e3-c362-482c-b51f-345321d52f23"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 977436,
+                            Harga = 941661,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium X1 Kelas A - 2",
+                            Nama = "Premium AA Limited Edition - 2",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("2dbdc724-8ce5-45e0-8684-cc1fc1b8a004"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 609217,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Limited Edition - 3",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("ffc7dcac-2a51-4962-98c6-2768571f52d8"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 518017,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Limited Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("de1e24fa-7c3d-4f12-ba20-06d104713491"),
+                            Id = new Guid("f5d8985f-ce58-4162-a57d-10451659a113"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 575083,
+                            Harga = 735165,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium AA Limited Edition - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("5b83d46d-b126-48d5-a262-b45856610831"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 888422,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium X1 Kelas A - 1",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("be7238f9-bebf-45b3-ad81-64636c1cee91"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 508250,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium X1 Kelas A - 2",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("f756ef04-235d-4c0d-b1d4-8a5ac68e3e36"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 623087,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Kelas A - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("9ef6316b-bb3f-4b1c-9e5c-221934ad9253"),
+                            Id = new Guid("9cb68a45-e613-4e87-860f-f29fce36fadb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 587764,
+                            Harga = 616730,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Kelas A - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("5840c76d-4f8d-4a46-a3be-704aff9b2556"),
+                            Id = new Guid("48b048f8-4d24-4901-aeef-779a4ae2e991"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 564957,
+                            Harga = 971874,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Kelas A - 5",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("1edcffd1-4860-46fc-a6d4-dbc890ceb2bf"),
+                            Id = new Guid("f0f88b4e-96fa-42d5-b4e9-e77fc1637d67"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 673930,
+                            Harga = 530196,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Kelas B - 1",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f5d525ff-4ed3-4926-a0d7-a6150adee7dd"),
+                            Id = new Guid("4a2cde01-ff65-4b80-8118-03a3bb308258"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 791391,
+                            Harga = 753152,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Kelas B - 2",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("a75751af-a8f9-487d-b6bc-39cb1b77b5b7"),
+                            Id = new Guid("6b8ee66d-685f-4a12-a387-52ac9371af90"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 647226,
+                            Harga = 806215,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Kelas B - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("21481e0d-4b90-4df7-92ba-67b623bd6e2e"),
+                            Id = new Guid("6ae5de26-d696-4065-bfa0-d392b7614f2c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 981119,
+                            Harga = 909367,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Kelas B - 4",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("41a025b9-ad8a-4ffd-9987-2562c00d3c5a"),
+                            Id = new Guid("03eb7c65-e50c-40b8-b3c3-be699c522c69"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 542149,
+                            Harga = 529468,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Kelas B - 5",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("c53ccd6a-2584-4777-b7c4-7ff68e48bee5"),
+                            Id = new Guid("f20f7c1d-278a-46c6-960c-97452f82d535"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 892531,
+                            Harga = 691090,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Special Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("15c53a95-2c6c-481a-be97-8e208d7b452a"),
+                            Id = new Guid("77a49b46-6a50-4402-b2ed-356ddd2cac8b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 569674,
+                            Harga = 687066,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Special Edition - 2",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("2dbe2f9a-3711-4a3e-be69-34ddce4707c5"),
+                            Id = new Guid("a1f07a45-2919-4528-b88b-446b1dfe0a33"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 969049,
+                            Harga = 844537,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Special Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6af97a4f-c329-496b-8365-2dc5d2568cec"),
+                            Id = new Guid("56257f2d-d7ef-42d7-998d-f08493033fdd"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 803451,
+                            Harga = 580641,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Special Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("f8299666-181a-4886-bc62-a2adc460214b"),
+                            Id = new Guid("94732859-2342-420d-bc24-d57612bc7eb3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 936522,
+                            Harga = 657447,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Special Edition - 5",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("e2acc49b-5139-4c2d-925e-66d057f66e66"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 826769,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium X1 Limited Edition - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("b016767f-e64c-4211-9531-e331ecea2ff1"),
+                            Id = new Guid("7de33446-1c0f-4002-bb8e-7721b73f901b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 646950,
+                            Harga = 502405,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium X1 Limited Edition - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("718a8b89-ac8f-412f-9d35-58abf192e36b"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 928190,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Limited Edition - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("adf181d1-ad25-44ae-a2a1-b941d899ee23"),
+                            Id = new Guid("e6dc75d8-422b-42d4-8678-107b4bd4db61"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 860399,
+                            Harga = 695844,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Limited Edition - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("04ab7783-336c-4678-ab41-12fc046bc959"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 823428,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium X1 Limited Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("ae32e880-0967-4acb-936d-302eaa5ccc11"),
+                            Id = new Guid("c3d7b8de-8a28-48b6-817b-e578faa195fe"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 869453,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium X1 Limited Edition - 4",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("02ca5109-e2c3-4f10-b89c-6bd41021d094"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 511063,
+                            Harga = 517145,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium X1 Limited Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("d49d3a15-970d-4fb8-b85f-8673a76e5242"),
+                            Id = new Guid("43a92f0d-bdca-46b1-af8c-afac84d082b4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 597683,
+                            Harga = 891869,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas A - 1",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("472041f4-15c7-46e8-94a1-5a6fb973f04c"),
+                            Id = new Guid("54038597-7c8b-4d2c-a4a3-f2ec2e47dbd5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 829759,
+                            Harga = 701671,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas A - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("0356e504-e113-44e8-b4db-dcbde2532517"),
+                            Id = new Guid("d323cc7b-887e-4927-9df2-cc0abf914f1a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 895012,
+                            Harga = 973475,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas A - 3",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("127d973b-6c6c-44b6-b756-d582b3f5d2d9"),
+                            Id = new Guid("9d937fd8-7846-4409-9d93-fa7b79ffdc6e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 838953,
+                            Harga = 721551,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas A - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("780a08e3-1169-4dd2-8f0d-bfb5fafd8135"),
+                            Id = new Guid("e62b2495-1176-4087-873c-fa588d47eae3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 957410,
+                            Harga = 890054,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas A - 5",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("545c3597-792a-40f9-b16c-87ddca8a85b7"),
+                            Id = new Guid("51581630-0c4c-46d5-b592-980fa09965e1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 516784,
+                            Harga = 995063,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas B - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("0ba4d14e-4153-444d-b55f-f144a9c790fb"),
+                            Id = new Guid("cb84a460-cb11-41a2-8f36-1e4ef6db9617"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 958906,
+                            Harga = 668847,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas B - 2",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d802d009-724a-4099-ae3d-1c5819a63ee0"),
+                            Id = new Guid("759b5231-0e1f-4d97-90fa-b286f75aaed3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 694326,
+                            Harga = 945487,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas B - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("87c6480c-e981-4417-b7ff-560d27a966d9"),
+                            Id = new Guid("fc2712eb-0b8c-4638-841a-7f8ec6a875de"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 963186,
+                            Harga = 680804,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Kelas B - 4",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("4e77b85c-839f-4596-8800-b40f7921821c"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 806762,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium Pro Kelas B - 5",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("a8eeddab-866d-4832-95e2-1cdf1ad7998c"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 663348,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium Pro Special Edition - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("6710e426-5b92-4a42-b0cc-50bb3dd3a747"),
+                            Id = new Guid("3f111022-3a44-4810-8798-801ad6637486"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 906984,
+                            Harga = 700125,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium Pro Kelas B - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("ec017c4d-0613-40f0-a8c0-d31ea23f4535"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 715403,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium Pro Special Edition - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("b591fc2f-8b77-47d5-b658-60524b7b740b"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 527602,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Special Edition - 2",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("d03b43e4-5088-4ecc-ab3e-dbe3f86d811e"),
+                            Id = new Guid("bc015141-cc18-4765-9774-d37feb59453f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 781233,
+                            Harga = 637147,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Special Edition - 3",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("5feaf5f6-5d47-4f95-8d70-938e39b98fbc"),
+                            Id = new Guid("64fe1abb-3d32-4146-8158-cab5fd32b7b2"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 595415,
+                            Harga = 891480,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Special Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("90645733-5c43-475a-aa4e-1779eac70205"),
+                            Id = new Guid("8be697a7-0856-43a4-b6b1-9b7a648247a4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 832297,
+                            Harga = 906977,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Special Edition - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("1a5322ba-6e3e-4a13-95df-5e94545fa992"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 827573,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium Pro Limited Edition - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("b3ada853-5101-416a-96ec-fac786a34fa7"),
+                            Id = new Guid("d8427bd1-6635-4707-8036-823092c4a68d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 557036,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium Pro Limited Edition - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("cdd40473-634f-44ca-addc-835a8983d566"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 865972,
+                            Harga = 967988,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Limited Edition - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("b06d2b42-3034-4403-a214-d16affef847f"),
+                            Id = new Guid("a81f6b25-35e6-4a5a-aeaf-506b5623c5b3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 887644,
+                            Harga = 959540,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Limited Edition - 3",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("c49fa8e9-8eae-436f-95a7-0ae1ba545fad"),
+                            Id = new Guid("53a4f1c5-cd3d-4de4-97e1-dbd3452d373f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 791793,
+                            Harga = 741015,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Limited Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("3ebc64a5-e04b-4cd1-8c7b-1cc74207721b"),
+                            Id = new Guid("f0e277fa-4726-4a8c-a08b-610e14757b9b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 767094,
+                            Harga = 748642,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Pro Limited Edition - 5",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("7ea68f2c-b475-46a0-abd3-ab1ca2d34b9e"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 655886,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium Ultra Kelas A - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("c93b0381-0699-4fa8-a178-da2fd5425aea"),
+                            Id = new Guid("b9873a5b-193b-499a-965d-f8376c9bbee0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 589869,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium Ultra Kelas A - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("fe16bcfd-f5ef-4209-b71b-116dd631b8ff"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 825230,
+                            Harga = 795850,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Kelas A - 2",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("a4d7bb64-5dec-4872-9607-cd84846af859"),
+                            Id = new Guid("97400976-cc69-4a4f-b4d5-731b3349b208"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 698858,
+                            Harga = 647348,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Kelas A - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("d7b6eadf-e00a-40e0-a244-1e2f8757f78b"),
+                            Id = new Guid("d287ae92-8b81-4955-bf3e-37c2f58780d0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 785597,
+                            Harga = 841921,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Kelas A - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("a760e03c-8d75-4f2d-92d4-675988c69c3f"),
+                            Id = new Guid("32a542c5-9922-48d6-90c6-e5b4ae10baf9"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 901556,
+                            Harga = 573419,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Kelas A - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("b7a330c4-336a-4df5-bc9c-08155e868a67"),
+                            Id = new Guid("706c7770-8efd-499a-bdae-b28903a54611"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 875187,
+                            Harga = 639290,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Kelas B - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("ffa2cd25-ee4c-4905-8ad4-cdeb74d57ebc"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 586595,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium Ultra Kelas B - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("b618725d-6cde-47af-a148-39049db03be9"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 785738,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium Ultra Kelas B - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("027d946e-cd8d-402a-bafc-787f27d9cf18"),
+                            Id = new Guid("45e68f22-a8ac-42bf-81bf-0b11f81a4e23"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 723099,
+                            Harga = 656581,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium Ultra Kelas B - 4",
+                            Nama = "Premium Ultra Kelas B - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("b208a4f8-0814-482b-a712-16a62d0c264c"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 943745,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium Ultra Kelas B - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("3beba81e-66ac-4070-88f6-3d0e284f93d6"),
+                            Id = new Guid("9676222d-098a-4298-b092-05d0360b87f5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 718639,
+                            Harga = 695393,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Premium Ultra Kelas B - 5",
-                            Rating = 4
+                            Nama = "Premium Ultra Kelas B - 4",
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("ab73f000-69a2-492b-be20-b89f5a6937e2"),
+                            Id = new Guid("79809946-8c58-470f-8b26-9ccf62412e74"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 594803,
+                            Harga = 508387,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Premium Ultra Kelas B - 5",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("5189b820-90b4-45e2-8b75-b521d4d49204"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 720037,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Special Edition - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("cee3d3b2-0b52-44c7-ab57-42c6e07b1b8e"),
+                            Id = new Guid("736fd289-3969-4689-8a05-751fc2aee233"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 750401,
+                            Harga = 801490,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Special Edition - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("826dc01a-297a-4c02-b732-44c253d142d5"),
+                            Id = new Guid("0186c7ab-2ddb-42ae-a90b-539da3cd2d97"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 989431,
+                            Harga = 921803,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Special Edition - 3",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("15f11e70-ee00-4721-85bb-48eaf50764aa"),
+                            Id = new Guid("004c3c12-b751-454a-bc46-dc114f7c13ca"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 998018,
+                            Harga = 616702,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Special Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("b1e4df40-2d86-44c4-8a30-da09f3d2a838"),
+                            Id = new Guid("b21fb304-729e-45a9-9ec6-5d45d5784c5f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 870918,
+                            Harga = 871020,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Special Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("bd9a0aff-b9ff-4f0e-9b56-212c285bc28e"),
+                            Id = new Guid("f39aca58-897c-497b-b481-f6cee7e2175e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 536074,
+                            Harga = 772223,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Limited Edition - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f4d1072b-1e70-4e6b-98b2-95965611c5b9"),
+                            Id = new Guid("0b0b27fc-d381-4e0f-bb5f-3e269c4ab814"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 886752,
+                            Harga = 810544,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Limited Edition - 2",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("6e5b9901-3ef8-4020-8c9b-65cbd350c497"),
+                            Id = new Guid("ad9948b0-3fa8-4bbc-8a61-ee0f54f213d4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 829945,
+                            Harga = 957310,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Limited Edition - 3",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("89eb2677-ac8e-4305-9241-344374002804"),
+                            Id = new Guid("e4912a53-1efa-4195-b194-812bf37e11ef"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 879338,
+                            Harga = 635278,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Limited Edition - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("4d259f53-7b8e-474a-b3de-1cd15d6fa798"),
+                            Id = new Guid("a264a962-69e4-4a85-812a-1d448fdef4fc"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 746793,
+                            Harga = 708061,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Premium Ultra Limited Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("32adf659-49a0-43b5-b6f0-1ca960e24896"),
+                            Id = new Guid("8a4afd63-28a9-4405-add2-cf2b49d9038a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 820118,
+                            Harga = 760925,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas A - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("9ac2f8ed-9519-4ac0-bddb-ea1bc95ab339"),
+                            Id = new Guid("b12e3c68-b7fd-4ee2-b600-596cd71a6c15"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 796860,
+                            Harga = 664371,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas A - 2",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f8bc6ccc-7e4c-4598-831f-29751cd248a1"),
+                            Id = new Guid("6b1914fe-23eb-43e4-b273-8b7e91d7ee43"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 993609,
+                            Harga = 676551,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas A - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("3f1ec0ec-b192-420b-b783-e5375a4ab71b"),
+                            Id = new Guid("fa58735e-f8eb-4539-9e43-19d3228a27c0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 637794,
+                            Harga = 752397,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas A - 4",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("cb940e8d-5526-40cb-b729-70fccf68bacb"),
+                            Id = new Guid("17d33b3b-224a-4e84-b4be-cf49922f9642"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 732099,
+                            Harga = 661000,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas A - 5",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("b6a95e93-9e61-4953-896f-da0a387c2763"),
+                            Id = new Guid("9345a6c7-7f05-4019-a306-5fa68e54c936"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 707533,
+                            Harga = 800351,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas B - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("d7f6f1e9-0395-4fb1-b9b9-8e2edb745aaa"),
+                            Id = new Guid("8c58aadf-2007-4d08-a8dd-7db8e4c8e628"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 556474,
+                            Harga = 923647,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas B - 2",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("39295dd1-ce05-45eb-bda5-9c2d741aa902"),
+                            Id = new Guid("4526daaf-de6f-4125-aaae-9640e521d89a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 695025,
+                            Harga = 666762,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas B - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("659cada7-1197-4265-8557-9fea5b3b87bc"),
+                            Id = new Guid("a8e3a5d6-34c0-4e07-9854-966c0c5ddc03"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 898841,
+                            Harga = 761306,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas B - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("fef59779-22ee-4087-a97c-440c086eccf0"),
+                            Id = new Guid("3147a2b2-7592-44f8-b6ec-0dd8c1339ecf"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 745498,
+                            Harga = 631220,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Kelas B - 5",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("6fcb713d-1761-4e7f-9f95-ae9def3a6230"),
+                            Id = new Guid("76c794c5-31c4-41fa-a9ee-d446aa772de0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 687076,
+                            Harga = 598158,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Special Edition - 1",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("54454ea8-434a-46d3-b795-75b99415f32c"),
+                            Id = new Guid("d7ed807a-2f96-4ea9-9f09-6a29b012b772"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 551403,
+                            Harga = 500412,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Special Edition - 2",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("a0878580-899c-4c3f-a59d-09c23a00b16e"),
+                            Id = new Guid("8c882aaa-643e-45bb-b9ad-0953ece6f326"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 922616,
+                            Harga = 781098,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Special Edition - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("eec3d7be-62c6-4d09-9de6-41d35e7d833d"),
+                            Id = new Guid("1f65da06-8c08-4964-ac51-9567f1c35e5c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 713000,
+                            Harga = 553498,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Special Edition - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("9fff0669-7820-4bf2-9691-34f1083021f0"),
+                            Id = new Guid("113434ab-cf19-4d21-af6a-35ea03226096"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 630854,
+                            Harga = 544255,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Special Edition - 5",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("4e72e26b-cb46-4758-9b5b-20fdb83e1649"),
+                            Id = new Guid("f188594e-33b3-4c7a-9192-d0ff0afbb1f0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 721190,
+                            Harga = 979796,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Limited Edition - 1",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("612b293c-327e-4222-91bf-7d35883348de"),
+                            Id = new Guid("ef6e7a76-d321-43e1-9635-2a29abff0f94"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 820372,
+                            Harga = 909020,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Limited Edition - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("47061b90-87bb-4556-a41c-53d05d5dcdbd"),
+                            Id = new Guid("19d12b1e-8d0c-435b-bf3c-08ff4db80660"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 782570,
+                            Harga = 673001,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Limited Edition - 3",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("8ca6e164-eccd-40f2-a102-d5f1f6aef57a"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 840363,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super AB Limited Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("915023c5-aeba-4369-852c-0f1a97e0254d"),
+                            Id = new Guid("863166f7-87e0-4c39-b87c-b5d2b91a1f86"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 882105,
+                            Harga = 709175,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super AB Limited Edition - 4",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("8e9bd0e3-7198-4ad7-b7db-9f378daea954"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 909454,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AB Limited Edition - 5",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("b915bfc2-5556-4b76-8143-822e3c599e0e"),
+                            Id = new Guid("4fdd3f98-79d5-4390-9e9e-7fb0044fe284"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 546839,
+                            Harga = 590710,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Kelas A - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("5c431acb-5c4b-4585-bfe2-a0f8f3a4549f"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 727250,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super AA Kelas A - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("4dbf661d-e59f-4549-99d2-984382e3ef54"),
+                            Id = new Guid("3a2e42ff-d9c5-4de5-b023-cefa35e793d3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 946333,
+                            Harga = 622018,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super AA Kelas A - 2",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("d838f7ec-f3b8-4d11-b73b-8633cf7479f5"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 863375,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Kelas A - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("700a9a21-2bf0-4de8-a035-ef943b44ef65"),
+                            Id = new Guid("8e85e91e-c1ed-466c-a0fe-baa847c1ce72"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 993899,
+                            Harga = 522900,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Kelas A - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("2b4520a0-0e0f-406e-99b2-c41dfa9bf689"),
+                            Id = new Guid("e5b19326-790f-48c9-9b24-6fe0b8cc719b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 637946,
+                            Harga = 527835,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Kelas A - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("0daca8c0-3079-4143-9346-9934b35c1831"),
+                            Id = new Guid("18a3b49d-00ff-4321-aa3c-9c07bec6ae4b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 678356,
+                            Harga = 757093,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Kelas B - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d99f901e-3813-4b75-a1c3-a93a36579645"),
+                            Id = new Guid("be086072-5b84-4549-a2a0-81d820fb7b7b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 652439,
+                            Harga = 942757,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Kelas B - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("c6354158-2f12-4835-bdde-999aa7c4700b"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 716769,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super AA Kelas B - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("2c067fec-f087-44fb-8fa6-2a995948f0b2"),
+                            Id = new Guid("adfc7c80-75ac-450f-b639-cd5eda1f9bc2"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 749249,
+                            Harga = 577282,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super AA Kelas B - 4",
-                            Rating = 5
+                            Nama = "Super AA Kelas B - 3",
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("09951d2e-0795-4220-bb12-98180fe5695b"),
+                            Id = new Guid("2004fb34-53bd-44b7-afe1-9f3cce41f0a6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 800751,
+                            Harga = 952514,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super AA Kelas B - 4",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("6668bc11-f881-4ab2-af95-07c51173a8bd"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 751134,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Kelas B - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("44717ab0-fdbd-4f24-bb2b-7cc28552e72a"),
+                            Id = new Guid("e434502c-8945-46f0-8da6-f491910f1983"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 666995,
+                            Harga = 912106,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Special Edition - 1",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("feaad4db-e6c9-4c51-aab2-32640643bfbf"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 531445,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super AA Special Edition - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("90b7a7a7-6bf7-4800-9a33-32e4e72056d9"),
+                            Id = new Guid("c03ad96b-d448-47ba-b03e-f91393d7f2a7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 973840,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super AA Special Edition - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("f00306d6-7567-44a6-a76b-0ec10d1c3f98"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 765942,
+                            Harga = 637781,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Special Edition - 3",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("7274b86b-4a93-468d-b51e-e66001c5b012"),
+                            Id = new Guid("af5c3a4b-d008-4ac2-a8c6-d65f1cdef44a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 848765,
+                            Harga = 814743,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Special Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("6125b5c6-2c41-4ced-a02f-85f51c22ebaf"),
+                            Id = new Guid("c9621835-ae27-4515-b33b-0c0889564975"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 959056,
+                            Harga = 544165,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Special Edition - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("844ace32-bd60-40cd-81c9-eae59902a443"),
+                            Id = new Guid("9b0d6f16-3c36-472d-b427-d3502cb9f9e3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 893666,
+                            Harga = 667475,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Limited Edition - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("30e2ecb7-9440-4ff8-8e79-000bce202163"),
+                            Id = new Guid("18132a3c-e3cf-4773-ad61-293da4fec667"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 800353,
+                            Harga = 842549,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Limited Edition - 2",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("5ce736c2-ed40-4ecb-b8e7-7315ed497adb"),
+                            Id = new Guid("f9d551ca-9329-4e36-a89a-c8762418c309"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 848853,
+                            Harga = 567142,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Limited Edition - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("02d42f27-5f76-4c85-bf21-93d1f1272567"),
+                            Id = new Guid("ada91ae2-f146-4a95-b541-d455fc41f030"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 525528,
+                            Harga = 969523,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Limited Edition - 4",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("b2ad3e79-e290-42bb-b7ae-784463423ac0"),
+                            Id = new Guid("41d5b577-45e3-475c-b757-ec91888398eb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 591436,
+                            Harga = 821158,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super AA Limited Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("82440fdb-3856-4b8c-aef8-31fc1df1bae7"),
+                            Id = new Guid("9e7eec56-6809-4f08-a0ec-6f86d526246f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 847873,
+                            Harga = 911172,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Kelas A - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("5a2fe4fe-7bbc-4ba3-bf33-35aa774a9ae7"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 668674,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super X1 Kelas A - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("ee0cd63b-09af-41dd-9fac-3d3869473654"),
+                            Id = new Guid("eef04cbf-a571-4b21-bf1b-e1c3251ab873"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 759590,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super X1 Kelas A - 2",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("e202ee9e-9fbf-42d9-b568-1558b0d2dde6"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 916968,
+                            Harga = 694709,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Kelas A - 3",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("c6df6f05-31da-444a-9830-d00fafa144a2"),
+                            Id = new Guid("73aa40d6-cee5-41b6-8e6c-146f3c294ec0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 644554,
+                            Harga = 544701,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Kelas A - 4",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("c8b7b3ad-0f5b-4c4c-a357-d140f1a7026d"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 543620,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super X1 Kelas A - 5",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("4e5336f3-5535-4183-b480-ffb5005c6992"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 561495,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super X1 Kelas B - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("730a12c6-865c-437a-864f-c6d9a509e809"),
+                            Id = new Guid("8482ee6c-dd71-4015-acb5-17fe94bafd0f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 871782,
+                            Harga = 751272,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super X1 Kelas A - 5",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("0768ae41-8bbe-47d6-a0c6-895a80b1d983"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 816783,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super X1 Kelas B - 1",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("0f8feebc-b98a-4dab-81ab-e688391e89aa"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 894775,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Kelas B - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("6c245083-3e7b-4330-b1d9-dba9a6adacb3"),
+                            Id = new Guid("3b77361e-539d-4491-9138-7184b8bf4de8"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 504484,
+                            Harga = 708578,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Kelas B - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("c8949548-1eb8-4532-8681-faaa5077083d"),
+                            Id = new Guid("0245bc29-b1fd-4d90-a9bb-9052e531be5c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 973844,
+                            Harga = 977141,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Kelas B - 4",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("a1176983-b252-450f-9bd3-589a481219ff"),
+                            Id = new Guid("68c88497-d480-4924-aaf7-4896ed102481"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 650473,
+                            Harga = 570911,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Kelas B - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("5101a9d8-91d3-48af-889d-ccff56447240"),
+                            Id = new Guid("68a4ad35-4bf0-454a-9736-d5c33b60a454"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 542474,
+                            Harga = 770932,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Special Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("469ee4be-3377-4395-a93d-8116ffbc7ce6"),
+                            Id = new Guid("4feb7492-6de7-47cd-9ec7-10790f4078b3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 655640,
+                            Harga = 889931,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Special Edition - 2",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("5d5413e1-6470-4f23-b0db-2590835a66f4"),
+                            Id = new Guid("6657920b-f440-498e-a62c-b1dc8d5ae5e3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 698153,
+                            Harga = 652662,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Special Edition - 3",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("e2175fe8-f4fb-4082-8c24-0136f6d3e086"),
+                            Id = new Guid("8faa6612-1490-449a-bda8-752cf0aee6f0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 815334,
+                            Harga = 546986,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Special Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("f1014a45-3b92-42cc-85a3-16413588fa16"),
+                            Id = new Guid("c849e220-706d-4c2b-912e-bce3affe431a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 621204,
+                            Harga = 923085,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Special Edition - 5",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("30a40bdc-36b1-43fb-b511-4c2ff2f7836a"),
+                            Id = new Guid("5e7a578c-1b82-405b-9313-69727d062ab4"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 625398,
+                            Harga = 790078,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Limited Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6371f3f1-157e-40a0-97c4-b2895fcaea5b"),
+                            Id = new Guid("bb9bbf94-c060-471f-a244-ba7522905320"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 625943,
+                            Harga = 747345,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Limited Edition - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("a0a61c31-9cdb-4fcb-b979-3b1316a285f3"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 610355,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super X1 Limited Edition - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("33c8ea0d-8353-4b15-a478-ccdf31f8b863"),
+                            Id = new Guid("de135881-2f8c-47da-a4c1-1813826d3724"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 625342,
+                            Harga = 577006,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super X1 Limited Edition - 4",
-                            Rating = 3
+                            Nama = "Super X1 Limited Edition - 3",
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("bc078244-adbc-4a03-b2d2-864d58c4cfb9"),
+                            Id = new Guid("7a169a72-0b12-414c-95e8-3c090e36c253"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 981857,
+                            Harga = 681624,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super X1 Limited Edition - 4",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("424cbd3e-ded5-432a-9bc8-bb1c6b5f3ba3"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 576093,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super X1 Limited Edition - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("62b9e7a6-cd87-482f-84a6-b8dc64c0beeb"),
+                            Id = new Guid("0b2147a4-2e75-490c-9798-c0807f3c1db9"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 643187,
+                            Harga = 824115,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Kelas A - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("67bc3a3c-d040-446c-a108-29d995b7afb7"),
+                            Id = new Guid("276f15c6-329d-44c0-bc4a-9d6813a68c9c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 570025,
+                            Harga = 538930,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Kelas A - 2",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("67f7b055-7095-4c11-ba18-72d7bf27bfae"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 925530,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super Pro Kelas A - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("3c740e8d-fd37-4abd-8f41-b3583f7609ec"),
+                            Id = new Guid("b75680b0-61e3-4abf-9ad5-7e7acf76a62f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 523850,
+                            Harga = 918267,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super Pro Kelas A - 4",
-                            Rating = 4
+                            Nama = "Super Pro Kelas A - 3",
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("dfbea58e-98d2-4ad3-8610-3e29612c153c"),
+                            Id = new Guid("bb599c93-28a0-4051-a706-029b860f910f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 807277,
+                            Harga = 796306,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super Pro Kelas A - 4",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("9d97d6ef-0adf-42cb-9bdb-0552ed6871d5"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 501032,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Kelas A - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("9094e853-750e-48c7-bb51-bfeab174e777"),
+                            Id = new Guid("b1f7f1c3-5dcf-420d-85bf-b2fb01018bc5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 580465,
+                            Harga = 544878,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Kelas B - 1",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("0b17a2f3-b05f-4428-9b14-e88420e7b1ac"),
+                            Id = new Guid("0fd0a24a-afee-4805-8427-06030f6b8cb0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 654287,
+                            Harga = 597579,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Kelas B - 2",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("fdff4836-a8e6-4d55-af22-ea12cc87664a"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 948746,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super Pro Kelas B - 3",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("3af7e7e3-6ccb-4934-8b80-42af12138e26"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 695679,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super Pro Kelas B - 4",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("a5598f6c-5e6a-4294-ad63-8d81778c34ae"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 700316,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super Pro Kelas B - 5",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("c14cfbdb-8633-492a-9dd7-de7987f767ff"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 607005,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super Pro Special Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("635182c5-308a-455c-aece-17b527543ccb"),
+                            Id = new Guid("354784f9-9a8c-40e8-bd3b-39437fe25032"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 575345,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super Pro Kelas B - 3",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("a1afb1ff-5dd6-46dd-a870-307a7c139884"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 933068,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super Pro Kelas B - 4",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("86f136d0-8da8-46df-89ed-d6349c5e38b4"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 562335,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super Pro Kelas B - 5",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("a9928f29-4785-4421-9329-67a90d5693eb"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 811158,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super Pro Special Edition - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("eeedaa37-eda4-4f45-8678-ff77646d3f0a"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 536681,
+                            Harga = 806401,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Special Edition - 2",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("47671357-fed7-4da9-90e3-1ad90add8ee2"),
+                            Id = new Guid("cbc86fd7-26e9-42da-a3dd-83bc5b515e9f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 599119,
+                            Harga = 676669,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Special Edition - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("b7d32cee-67df-4cb3-a153-e46dd3b914a6"),
+                            Id = new Guid("e110bc00-8ba8-4dc0-badd-a3d55a721a62"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 693490,
+                            Harga = 578754,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Special Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("fd196b35-b596-47ae-a484-98cb12d4edb1"),
+                            Id = new Guid("379fe3ed-79c0-4720-b873-debc467b3b10"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 875830,
+                            Harga = 882410,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Special Edition - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("09d5bdd1-d5c7-4728-8659-2d4653ad2b25"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 612063,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super Pro Limited Edition - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("2fbda6a5-3c63-435d-9f16-de0235c36b9f"),
+                            Id = new Guid("4cd845ba-7f4c-4fee-8b77-ab218d3f669b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 943372,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super Pro Limited Edition - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("58fcfeda-057e-4961-a7ef-0b8bc33ab097"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 728143,
+                            Harga = 929674,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Limited Edition - 2",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("cb068309-9b49-43e6-b213-51acd5a8f11b"),
+                            Id = new Guid("0f9a1358-e163-4d76-b9d5-12e4e78a738c"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 624202,
+                            Harga = 747730,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Limited Edition - 3",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("24b1e0a8-7f29-475a-947d-b4a1f187902a"),
+                            Id = new Guid("a34cf873-6da6-4446-926c-7ebc62faa40a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 634695,
+                            Harga = 835987,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Limited Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("43554d57-dfff-4a89-a62d-a540b0292218"),
+                            Id = new Guid("1c83eec4-6b93-4c22-8851-a5c3491bc5e3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 584307,
+                            Harga = 706763,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Pro Limited Edition - 5",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("5d80f6a1-deac-475a-bd86-93f32ca1b5a3"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 667734,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Super Ultra Kelas A - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("e0a778ae-eff2-4247-b565-3d06b5d02f55"),
+                            Id = new Guid("96ed600f-2f7f-48b6-bc42-213ae4e10a62"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 522748,
+                            Harga = 968706,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Super Ultra Kelas A - 1",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("f089a8a2-dc9d-4be9-8caf-c7d81998e53f"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 734723,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas A - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("f7c3dbf9-9c2b-4ac5-9714-17badddbd5d5"),
+                            Id = new Guid("754497a6-8fb8-49bb-bf55-db8aa1420d32"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 557080,
+                            Harga = 643275,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas A - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("7c16a30c-c378-456e-86a7-568871bd77be"),
+                            Id = new Guid("270c6aba-36ce-447c-908b-610e76df791b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 765319,
+                            Harga = 703320,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas A - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("34557024-cd11-4a2d-b6a2-c3382a23e373"),
+                            Id = new Guid("72f6e19c-3a9a-4573-9679-2c02727f2e5b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 567351,
+                            Harga = 798138,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas A - 5",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("9a0b06eb-c5d7-4f7e-8d2b-faa8d0e7e7f2"),
+                            Id = new Guid("039a37bf-5f1b-412c-9446-6bccdd474e51"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 579245,
+                            Harga = 719987,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas B - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("ae1e0f0e-906c-45a8-912c-d6988af7e7da"),
+                            Id = new Guid("ff11fc1e-cbfe-48aa-bf7d-12c4f8b02a00"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 971346,
+                            Harga = 584690,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas B - 2",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("379d85c4-f0b4-4dd9-9350-11fada5ae35a"),
+                            Id = new Guid("d5b8812a-185a-4193-813f-26f58a3161db"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 811301,
+                            Harga = 777235,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas B - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f696eec7-753c-4df2-b066-7343ba832aa7"),
+                            Id = new Guid("f8031729-fbfc-4167-8238-8ec8014276d1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 766167,
+                            Harga = 602478,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas B - 4",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("eeeb155c-8794-4c59-b9ef-15261b6ac26a"),
+                            Id = new Guid("e9ca1233-bd7c-423e-accb-ae3398fd96e7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 907840,
+                            Harga = 870420,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Kelas B - 5",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("490b0b77-3e76-4071-b62a-30322fa607de"),
+                            Id = new Guid("5f1e67ea-e682-4e2d-87fa-7a82b46e2386"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 980432,
+                            Harga = 670934,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Special Edition - 1",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("a097400c-866b-4385-8fc2-191efb6f0266"),
+                            Id = new Guid("f8f7d748-3c3b-40d1-9457-92fa44e9e644"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 808944,
+                            Harga = 742341,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Special Edition - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("698045d0-e6f7-48f5-bacf-43d861f5314d"),
+                            Id = new Guid("914dbfcf-9204-486f-bf31-ed5c2e34bda7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 584874,
+                            Harga = 727464,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Special Edition - 3",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("13c5ef32-328d-45e6-b5bc-f1515c92d6a3"),
+                            Id = new Guid("77357df8-c57e-4998-9189-340ddfcaedf5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 668098,
+                            Harga = 744806,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Special Edition - 4",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("12be6a34-72d2-444f-87d7-c593ad62ed5a"),
+                            Id = new Guid("552b0e40-c496-43f7-939e-0c4f94352471"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 864505,
+                            Harga = 992032,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Special Edition - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("d993c086-3274-443f-8700-3409392e795f"),
+                            Id = new Guid("221fee9a-8c94-4400-a570-86e2e56efe82"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 944065,
+                            Harga = 904419,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Limited Edition - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("f1726507-49a8-4287-9a24-9d9cd0a6bbe3"),
+                            Id = new Guid("ac464b40-968c-4798-869b-5e5f47d80743"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 914692,
+                            Harga = 938499,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Limited Edition - 2",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("7a6f8563-b296-4d86-9154-8e5b4de5e67b"),
+                            Id = new Guid("033c162e-d932-431b-bc9c-2415d55ea09e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 663110,
+                            Harga = 770250,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Limited Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("c8788266-b81b-4e5e-9371-6bd7c24ef0be"),
+                            Id = new Guid("03df8500-a86b-484f-8620-a5efcd70d026"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 557183,
+                            Harga = 851875,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Limited Edition - 4",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("205d08e4-2109-44af-8d30-5e04f2b5a967"),
+                            Id = new Guid("7040f9f1-2461-4282-b147-15eded9b3f01"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 727871,
+                            Harga = 531544,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Super Ultra Limited Edition - 5",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("fdaa3692-8c2f-4ef6-9f44-5ff51d33fd01"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 757419,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AB Kelas A - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("652480d0-94ea-4340-8619-5ff52985ab25"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 908603,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AB Kelas A - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("c9ecec5a-35e8-42c0-b5e8-8bc6a2c325ba"),
+                            Id = new Guid("d830b80c-7875-4cf8-a1ec-2b0de0dc16c0"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 829228,
+                            Harga = 832376,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AB Kelas A - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("22787430-a050-4aae-99bf-ebaea781f0b1"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 745225,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AB Kelas A - 2",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("9cd0f27a-83ab-4188-a948-4ebdd70980e6"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 800448,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Kelas A - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("469f24f2-b05a-4680-b413-111fe96ccc94"),
+                            Id = new Guid("da91c72d-d6c8-4873-810f-eae73be6cb40"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 953393,
+                            Harga = 741402,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Kelas A - 4",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("5417c215-cdbd-44eb-86d8-16c93b5e99e7"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 592533,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AB Kelas A - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("971e078a-089c-4a6f-9070-7e2bfcfff93e"),
+                            Id = new Guid("0e92201a-900c-4eb7-8830-6c8c60abc337"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 796259,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AB Kelas A - 5",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("fc10b464-7b28-4662-bb62-2cd196a75692"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 726516,
+                            Harga = 771917,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Kelas B - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("0d703fed-e2ca-41c3-bd97-e7b7c070e45b"),
+                            Id = new Guid("ddb16247-e953-46ca-969e-fc820555a9b9"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 661676,
+                            Harga = 785745,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Kelas B - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d8f5149f-7ba2-49af-bc20-6391fac70661"),
+                            Id = new Guid("ec8eb352-259f-4421-a251-2e0c8cc4b09e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 926457,
+                            Harga = 830857,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Kelas B - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("95e54257-7578-497f-bb17-3afcbeb4ad92"),
+                            Id = new Guid("e64ba980-6ac3-4b90-9148-d70595cb67dd"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 862939,
+                            Harga = 509532,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Kelas B - 4",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("25cbe285-db1b-40ef-b5f6-4465147831f4"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 538548,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AB Kelas B - 5",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("1dbcc411-97e8-4102-832b-3dfce1df7d1e"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 530786,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AB Special Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("99803be4-caba-416b-9230-4eb6436f07bc"),
+                            Id = new Guid("90d7fad4-c276-44bb-9e3a-bbe6cc722522"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 735510,
+                            Harga = 971678,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AB Special Edition - 2",
+                            Nama = "Deluxe AB Kelas B - 5",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("6a9c4f8b-0ab1-42ca-ac9a-1bf86891b985"),
+                            Id = new Guid("ddd97494-a609-4b00-9fbf-0aa8071a3be1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 862964,
+                            Harga = 951937,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AB Special Edition - 1",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("4149a649-9783-4ebb-a28e-fbd1c12baab5"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 665040,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AB Special Edition - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("f8e7a964-a3f5-4787-ab76-9c5dc2812635"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 694314,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Special Edition - 3",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("accdce45-a4f4-434e-ba7e-1c5c7ae0d693"),
+                            Id = new Guid("1a8824fc-90a4-4710-b14f-9f3b6095cfa6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 506194,
+                            Harga = 536068,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Special Edition - 4",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("fbc1ac94-4da9-4da2-b43c-ea48821eb936"),
+                            Id = new Guid("e1fd4424-a44a-46ef-9100-5d2bc991cbce"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 563709,
+                            Harga = 905565,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Special Edition - 5",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("67bb86f9-b625-4c05-a9dc-b99234185f81"),
+                            Id = new Guid("5d8ac79a-2785-4518-8288-34b4ca61374f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 896894,
+                            Harga = 742417,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Limited Edition - 1",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("c056bcd5-16c4-4054-b522-af17b609133d"),
+                            Id = new Guid("3475e426-d268-491a-93f3-70bb179768bd"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 525081,
+                            Harga = 518749,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Limited Edition - 2",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("d33dc9e2-6d73-4535-b950-c66bf99b0fe1"),
+                            Id = new Guid("2eb9281f-f341-4c09-af67-116feec2461f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 852678,
+                            Harga = 582505,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Limited Edition - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("d2e3710a-b653-457e-8751-cbb2ad6d1560"),
+                            Id = new Guid("55ce7387-d847-4f6e-90e8-8f4d8a3f74b5"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 506258,
+                            Harga = 532549,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Limited Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("3b3cd082-9f38-4e40-abc8-f29cec9595b0"),
+                            Id = new Guid("be4ed551-7252-417e-87eb-646b27818be8"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 576373,
+                            Harga = 620260,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AB Limited Edition - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("57fabb76-c7b6-4b46-819a-85e79500188d"),
+                            Id = new Guid("b4aa4a24-ccab-496b-96d4-3d9c8fce7620"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 888030,
+                            Harga = 534831,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Kelas A - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("9c3bcb68-7eb8-4247-9ef2-24849b12deff"),
+                            Id = new Guid("4e0c763d-e4c8-4636-a028-65660cdb08fd"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 765986,
+                            Harga = 914545,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Kelas A - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("3b60743a-1850-4240-859c-f118ed9376dd"),
+                            Id = new Guid("5650042c-44fd-4af7-85ac-59de704976bc"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 928502,
+                            Harga = 897404,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Kelas A - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("7479d712-3c83-42a2-bd2b-a60fbe45683e"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 707188,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AA Kelas A - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("295acb25-88c5-4cdf-84ae-baa2ae2e0681"),
+                            Id = new Guid("ffe8692d-83d5-456c-a2da-1b71c443bae7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 986682,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Kelas A - 4",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("6fa6b813-8989-44e8-96ff-fc41a18f66b2"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 961070,
+                            Harga = 988496,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Kelas A - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("6b2afb49-8502-41a8-a363-da0fa2f0501f"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 506253,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AA Kelas B - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("55e4ca0e-9197-4e55-921c-9d5ce91de452"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 610738,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AA Kelas B - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("7a6d4626-a349-4bbe-9bf5-be018616cfc1"),
+                            Id = new Guid("4b4bea97-2e0f-49d3-a506-4731804ed5ab"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 606367,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Kelas B - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("d8b13d69-75de-4379-b72e-ce28dec3c50a"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 907772,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Kelas B - 2",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("242545cb-e074-415a-833f-b0df13c6b49e"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 545363,
+                            Harga = 952954,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Kelas B - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("164a730d-4061-4e93-9ce7-510bf1752375"),
+                            Id = new Guid("7a3bdbe5-2fa2-4c71-86ea-70ee6183ade2"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 875641,
+                            Harga = 825858,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Kelas B - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("6ec4b901-1f24-459e-b6c9-b830e65b163e"),
+                            Id = new Guid("a8f0990e-0932-491c-8675-b89b5c9f52fe"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 993807,
+                            Harga = 884592,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Kelas B - 5",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("b1de3b55-cc2e-4c7c-8be2-67850a2e6cf8"),
+                            Id = new Guid("249b7cc1-1225-4d01-bfd0-376754ec6b61"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 682187,
+                            Harga = 749069,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Special Edition - 1",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("f16c7fc5-6556-4ad8-ae28-e36a024950ac"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 709645,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Special Edition - 2",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("6b292316-bf41-42b0-b549-8a3e5b268309"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 931720,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Special Edition - 3",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("c19d9f41-f379-43b9-87ba-9aa0b656aeee"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 960577,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Special Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("491b5001-c72a-40ca-8f17-8f56736ed15c"),
+                            Id = new Guid("6cb88beb-7c04-4866-9919-ea4d5b4d8b00"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 852107,
+                            Harga = 936139,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Special Edition - 5",
+                            Nama = "Deluxe AA Special Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("fca9254f-baa3-4a61-9614-858b3f5145f5"),
+                            Id = new Guid("0ae046b5-8a90-4924-a006-efa7ff8799d3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 530938,
+                            Harga = 892993,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Limited Edition - 1",
+                            Nama = "Deluxe AA Special Edition - 3",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("bed764a1-a50f-4572-a37e-6e41041fc3e0"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 507227,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AA Special Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("346473ac-15a1-4ccb-b10c-7830fad0acc3"),
+                            Id = new Guid("f63d49c9-a09a-40a4-9c98-28a50335d153"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 860120,
+                            Harga = 569307,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe AA Limited Edition - 2",
+                            Nama = "Deluxe AA Special Edition - 5",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("fe4f201f-e9d2-40f6-9113-b2ae04c48850"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 538364,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AA Limited Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("e4b843dc-2966-4f76-876f-10f024d22332"),
+                            Id = new Guid("24d4aa9c-e5b7-46df-8305-60fda11b2692"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 515434,
+                            Harga = 740570,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe AA Limited Edition - 2",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("d094634d-1bb0-41eb-9b96-c78a2a83942d"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 784620,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Limited Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("8582e4ee-a14a-442b-b67e-3798cb33b2c3"),
+                            Id = new Guid("8e9f8190-5e18-4d21-8c8a-6d5a44f10276"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 590815,
+                            Harga = 507522,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Limited Edition - 4",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("6eec1086-559d-4baf-b620-361d32bdd59f"),
+                            Id = new Guid("5f1a8709-4bac-4f33-a64c-b09e8b9615e9"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 614935,
+                            Harga = 942458,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe AA Limited Edition - 5",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("75f03061-774d-42a1-b4e5-f671d970205a"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 909284,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe X1 Kelas A - 1",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("eaef0537-79bf-498d-8c35-ce9fedabb1f6"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 514228,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe X1 Kelas A - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("66b8814c-ffee-4050-8d39-b68c85615d7b"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 633813,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe X1 Kelas A - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("631e382b-a9eb-412f-9b6d-b7b87f616369"),
+                            Id = new Guid("df1a87a0-2ab8-4bb6-ac7d-dc0fb5027196"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 979692,
+                            Harga = 963474,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe X1 Kelas A - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("e4f87e16-9171-4a41-9b3d-d2e354ec4270"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 565691,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe X1 Kelas A - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("7e6c07b7-9012-48a6-bcbb-e1e915521890"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 817231,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe X1 Kelas A - 3",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("116ce1c8-896f-41a6-a838-e12536c6be6c"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 629410,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Kelas A - 4",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("c372fac0-b486-449d-8716-7d67ab5e3175"),
+                            Id = new Guid("60283129-a77d-4cdb-ab23-cd326aff9eeb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 745036,
+                            Harga = 672592,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Kelas A - 5",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("22e0c683-dd89-4352-9a36-488f6406d382"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 585645,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe X1 Kelas B - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("cbe515da-e6e4-4ef3-ab1c-d1212a28ed07"),
+                            Id = new Guid("e0cd0ec5-c844-4ca6-b00a-9f5ff9bca9c6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 993787,
+                            Harga = 512848,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe X1 Kelas B - 2",
+                            Nama = "Deluxe X1 Kelas B - 1",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("e2777df7-0900-4f1a-a357-ba3a9696e41e"),
+                            Id = new Guid("e354227d-f206-4586-a985-4ed324b8785f"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 665325,
+                            Harga = 841361,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe X1 Kelas B - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("070d9f15-03e2-4515-97fc-a37bdb02cdb2"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 612084,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Kelas B - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("507a9826-6301-4ed2-af6a-032eefc40399"),
+                            Id = new Guid("d9a564a1-cc40-49f3-8bf3-7f54b225d8b3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 605503,
+                            Harga = 836111,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Kelas B - 4",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("abfcd021-b52d-462d-b016-42c876d63f85"),
+                            Id = new Guid("c36e854f-2c05-44d6-a73d-8fe06b4afe13"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 885255,
+                            Harga = 617347,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Kelas B - 5",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("ecd118e3-5c33-4a66-8c90-34a34e5089cd"),
+                            Id = new Guid("898d8413-2206-4730-8cde-92816811d1a7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 833678,
+                            Harga = 888389,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Special Edition - 1",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("14ff03bc-36f8-4ef1-b1a0-b043e3c9a4b3"),
+                            Id = new Guid("226561b7-1d28-41d0-9cca-2afc97b3ca47"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 512802,
+                            Harga = 684604,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Special Edition - 2",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("88381bdb-cc0b-4cfe-bc91-1377f929c23e"),
+                            Id = new Guid("e4c0fe15-a7db-447e-aa84-5af4586dd30d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 644229,
+                            Harga = 672513,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Special Edition - 3",
-                            Rating = 5
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("52701d3f-6b69-428f-880b-e47caffcfcd0"),
+                            Id = new Guid("162fb14b-56a3-4a8b-bcee-dee37eb57fcf"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 870214,
+                            Harga = 800348,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Special Edition - 4",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("2da08eb0-ef1b-4e91-a923-53a30990a35f"),
+                            Id = new Guid("72b2ecce-fbec-4bd8-ba8e-f0bba75f5bdf"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 539147,
+                            Harga = 571693,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Special Edition - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("29b13700-84f5-4e9d-9868-dfaa47217f36"),
+                            Id = new Guid("9e2ba120-391e-45c1-ac84-9b97bf1dd74e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 957258,
+                            Harga = 774030,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Limited Edition - 1",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("00fb51d8-b575-4619-bc44-866819855d25"),
+                            Id = new Guid("5d6f7cbc-b693-4c0a-aad9-ebf2c81056f3"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 558826,
+                            Harga = 888792,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Limited Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("91a9446d-b98d-429f-b140-a8e70791024b"),
+                            Id = new Guid("a32240fe-ca31-41ea-8e23-c6753e2f4edc"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 875887,
+                            Harga = 718074,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Limited Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("773bc000-46ff-47ff-8ae7-b905a8c6e895"),
+                            Id = new Guid("7f61bc31-91e8-4336-8eb1-0fb9a21e64ed"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 865175,
+                            Harga = 687509,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Limited Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("3e5c5efb-d81e-4f08-80ed-e5ad1e36e6b6"),
+                            Id = new Guid("3b1a7ac3-3d58-42a7-b7a1-d9abd3fd6e83"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 935502,
+                            Harga = 878669,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe X1 Limited Edition - 5",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("15a5140d-bf01-4356-a659-32169e3aecac"),
+                            Id = new Guid("7d24fffe-90b8-4c01-a894-ec74a95e01fc"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 869523,
+                            Harga = 771574,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Pro Kelas A - 1",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("4141d542-31db-4760-b759-b22ac4be9854"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 766327,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Kelas A - 2",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("179fe5d5-a80b-4dbb-b7c2-bfcd2740d079"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 920961,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Kelas A - 3",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("7b74e95c-f0ca-4319-8d9c-5c5a7feff45f"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 894318,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Kelas A - 4",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("48fb23e5-dcbc-4a7c-9260-f51020c86051"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 547075,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Kelas A - 5",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("81ff70a0-7c64-4b69-93f6-4d54691745bf"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 829345,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Kelas B - 1",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("e2ca6116-afe6-46f3-a5a1-3d81774d343e"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 507927,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Kelas B - 2",
-                            Rating = 4
-                        },
-                        new
-                        {
-                            Id = new Guid("aed8324c-9a6b-44cd-b257-e651576350b4"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 679474,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Kelas B - 3",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("07163aad-d936-4d4c-997f-5e48dbe8800d"),
+                            Id = new Guid("21bb287f-cccc-41ea-ae71-f60f31d63360"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 817185,
+                            Harga = 891357,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Kelas A - 2",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("511df101-0523-4d31-a2d3-5ed859553e43"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 582540,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Kelas A - 3",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("d53b5cdc-074b-4fb8-bd90-b3b6f0532571"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 949098,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Kelas A - 4",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("8e9cd43d-43ba-420e-92e4-a1d2032e8fff"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 818646,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Kelas A - 5",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("4976b7cc-4c5d-4d08-a6fe-c01838e85040"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 713768,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Kelas B - 1",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("48b790d3-6c20-4bb8-92ce-83cc53685754"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 859097,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Kelas B - 2",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("268df930-d859-45bf-a742-90416a15a88b"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 894389,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Kelas B - 3",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("abc0b26b-b582-408b-8415-bd35c1c108d0"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 804904,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Pro Kelas B - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("26c779f0-25c1-4db5-9492-822e7836e089"),
+                            Id = new Guid("a214cf25-6fd0-40bb-a70c-6e0781196872"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 600947,
+                            Harga = 976862,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Pro Kelas B - 5",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("1a38accd-0960-433f-977f-7c2888ce9fff"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 962478,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Special Edition - 1",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("8ec3ccd4-740a-4dcd-9ff1-3a3cbe32cec4"),
+                            Id = new Guid("0e28778d-915d-4567-9849-576f1eb91fcb"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 663009,
+                            Harga = 742774,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Special Edition - 1",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("80130e71-2ddb-4058-a4c7-0526737816f9"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 907812,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Pro Special Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("8a299483-eab3-447e-9a4c-c878bf77b98b"),
+                            Id = new Guid("9ecb9a88-b3eb-41de-bad0-833adae3d0f1"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 999817,
+                            Harga = 808886,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Pro Special Edition - 3",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("8b07ecdb-c6d7-4b3f-9e54-ccf2adec6d9f"),
+                            Id = new Guid("ecea3877-024e-4a0d-9f56-57b6c52ad5b6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 978140,
+                            Harga = 991503,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Pro Special Edition - 4",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("8377432a-acf0-473e-bb3a-1eae763fcb79"),
+                            Id = new Guid("0fe66046-8599-49de-9cb9-dcf4632459db"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 706918,
+                            Harga = 511033,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Pro Special Edition - 5",
-                            Rating = 3
-                        },
-                        new
-                        {
-                            Id = new Guid("f2bdfff7-cdf8-45cb-ab1b-9e18f216ff9d"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 675290,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Limited Edition - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("df051a83-0a16-4ec3-88a2-4ce62af99503"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 643091,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Limited Edition - 2",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("8556cb41-04a2-48b6-b647-8935a79cd99a"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 823407,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Limited Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("385fa9fe-c7ea-4670-8165-7fe072d9d0bf"),
+                            Id = new Guid("481aa679-3984-4ba3-a2ad-2305cbec3053"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 731904,
+                            Harga = 818224,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Pro Limited Edition - 4",
+                            Nama = "Deluxe Pro Limited Edition - 1",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = new Guid("94d4646f-f8bc-4e9b-882c-ae8defdf0f0b"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 791176,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Limited Edition - 2",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("d626c063-c7a6-4c61-8fd4-621c8c3aa178"),
+                            Id = new Guid("fd00a4e7-cc6e-4bd2-9217-01b9437d2607"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 650940,
+                            Harga = 942235,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Limited Edition - 3",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("4fa744a2-8240-453e-9ec3-9fe3f98b17fe"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 868855,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Pro Limited Edition - 4",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("56b4a132-2975-4116-959d-be00d129b31a"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 574075,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Pro Limited Edition - 5",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("126ec095-d439-4848-85e7-995c381e2be8"),
+                            Id = new Guid("352334fa-0f1b-4337-8eb9-222fa9dea630"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 664027,
+                            Harga = 914571,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas A - 1",
-                            Rating = 4
+                            Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("237465e4-bcea-4cb4-8605-7e77de7c55b8"),
+                            Id = new Guid("2eb5fb5b-aeb7-48ef-ba20-5aae0a15361d"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 753913,
+                            Harga = 941295,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas A - 2",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("86e320d4-4be9-4939-bc30-00a3a0d04b63"),
+                            Id = new Guid("6948a201-0ebf-4344-b187-9ce6b473f694"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 595011,
+                            Harga = 662127,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas A - 3",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("9fc988ff-763c-4bb2-a922-8a96641f457b"),
+                            Id = new Guid("53299864-17b4-4af2-892c-dee67fce070a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 705782,
+                            Harga = 786565,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas A - 4",
-                            Rating = 3
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("ee97589b-6086-4cb6-9d72-63b63956d9ae"),
+                            Id = new Guid("002b139f-b92e-4a82-8eab-06beb9109264"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 994771,
+                            Harga = 809499,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas A - 5",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("765c01a5-8c5a-439b-adbf-ac4098021322"),
+                            Id = new Guid("c323b87e-b861-4c12-8b09-0d878e1c464b"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 806654,
+                            Harga = 670752,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas B - 1",
-                            Rating = 3
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("84d77b73-5e62-4625-aaa7-4caea575b3da"),
+                            Id = new Guid("e3c0320f-40ac-4d45-9b75-1b6e7438b4a6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 872004,
+                            Harga = 988085,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas B - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("a609d5ea-1dc7-4627-bc23-4bd95333aee8"),
+                            Id = new Guid("3e098c12-7cb4-4147-acce-3830d14238b6"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 722644,
+                            Harga = 837045,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas B - 3",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("828e5900-372d-468f-8528-077f0fbcc2f1"),
+                            Id = new Guid("fbfd9fbf-4f76-4a3c-83ea-9148a32e7b37"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 925817,
+                            Harga = 780227,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas B - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("db415ccf-95fb-4126-a5eb-df769851d33e"),
+                            Id = new Guid("258712e8-b8f0-4e46-90ce-c7c9ddd8de1a"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 825915,
+                            Harga = 897955,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Kelas B - 5",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("badba765-910e-4fac-90d8-b4a46e237d69"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 703800,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Ultra Special Edition - 1",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("42cab440-345f-4137-8073-3da639906b9d"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 586458,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Ultra Special Edition - 2",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("9f82e34d-7c60-4414-917c-9511aac03b44"),
+                            Id = new Guid("7ae3d4cb-a223-4ae7-9551-aaf8dfb803fc"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 650199,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Ultra Special Edition - 1",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("20734cbc-209a-4519-8522-71508d74e093"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 903179,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Ultra Special Edition - 2",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("a8549cab-c753-45a4-9702-8aaed592c1d4"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 839169,
+                            Harga = 858880,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Special Edition - 3",
-                            Rating = 5
+                            Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("3bf383e1-8315-402b-9421-40b03695c23c"),
+                            Id = new Guid("5c248498-7294-4187-8ed4-27397f87fe2e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 915459,
+                            Harga = 560079,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Special Edition - 4",
                             Rating = 3
                         },
                         new
                         {
-                            Id = new Guid("2b27c95e-8b89-49ca-83bf-1edad8e8d94d"),
+                            Id = new Guid("d46d3b1c-5ae0-446d-91ef-7357bd17f698"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 804634,
+                            Harga = 574782,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Special Edition - 5",
-                            Rating = 4
+                            Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("e302aa5f-0941-48ff-931e-aaad827ec81f"),
+                            Id = new Guid("a7882876-c727-48f9-9a48-a839aa62490e"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 796705,
+                            Harga = 842328,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Limited Edition - 1",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = new Guid("62901c48-f13c-4f27-a896-a0f685c1fa76"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 636985,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Ultra Limited Edition - 2",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = new Guid("e109b7d9-fc1e-4468-b6d2-c1d08f855515"),
+                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            Harga = 734124,
+                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
+                            Nama = "Deluxe Ultra Limited Edition - 3",
                             Rating = 4
                         },
                         new
                         {
-                            Id = new Guid("71bed763-475a-4732-890c-a4af68772229"),
+                            Id = new Guid("dd4005fc-2392-4298-a50c-a38ec7995de7"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 777298,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Ultra Limited Edition - 2",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("742203c0-cb6d-4b8b-a4da-14e57b85e702"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 666300,
-                            ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Nama = "Deluxe Ultra Limited Edition - 3",
-                            Rating = 5
-                        },
-                        new
-                        {
-                            Id = new Guid("485a54df-1e5d-4c59-acdf-a94cb3cb6fd0"),
-                            CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
-                            Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 898460,
+                            Harga = 710339,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Limited Edition - 4",
                             Rating = 5
                         },
                         new
                         {
-                            Id = new Guid("3b3e044c-8472-489f-9625-9ea520edf42c"),
+                            Id = new Guid("959e8f5a-f87a-45e1-9bf5-95e4ad9b3f77"),
                             CreatedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Deskripsi = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            Harga = 993470,
+                            Harga = 571374,
                             ModifiedAt = new TimeSpan(0, 0, 0, 0, 0),
                             Nama = "Deluxe Ultra Limited Edition - 5",
-                            Rating = 3
+                            Rating = 5
                         });
                 });
 
             modelBuilder.Entity("Entities.Models.Komentar", b =>
                 {
                     b.HasOne("Entities.Models.Produk", "Produk")
-                        .WithMany()
+                        .WithMany("Komentar")
                         .HasForeignKey("IdProduk")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -5166,13 +5175,13 @@ namespace ApiSkeleton.Migrations
             modelBuilder.Entity("Entities.Models.Pesanan", b =>
                 {
                     b.HasOne("Entities.Models.Pemesan", "Pemesan")
-                        .WithMany()
+                        .WithMany("Pesanan")
                         .HasForeignKey("IdPemesan")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Entities.Models.Produk", "Produk")
-                        .WithMany()
+                        .WithMany("Pesanan")
                         .HasForeignKey("IdProduk")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -5180,6 +5189,18 @@ namespace ApiSkeleton.Migrations
                     b.Navigation("Pemesan");
 
                     b.Navigation("Produk");
+                });
+
+            modelBuilder.Entity("Entities.Models.Pemesan", b =>
+                {
+                    b.Navigation("Pesanan");
+                });
+
+            modelBuilder.Entity("Entities.Models.Produk", b =>
+                {
+                    b.Navigation("Komentar");
+
+                    b.Navigation("Pesanan");
                 });
 #pragma warning restore 612, 618
         }
