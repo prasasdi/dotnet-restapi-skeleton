@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Contracts.Repository.CompanyContext;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,11 @@ namespace Contracts.Repository.Manager
         IPemesanRepository Pemesan { get; }
         IPesananRepository Pesanan { get; }
         IKomentarProdukRepository Komentar { get; }
+
+        IM_CompanyRepository Company { get; }
+        IM_DepartmentRepository Department { get; }
+        IM_DivisionRepository Division { get; }
+        ICompanyDepartmentsRepository CompanyDepartments { get; }
         void Save();
     }
 }

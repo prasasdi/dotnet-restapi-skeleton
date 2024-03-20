@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Service.Contracts.CompanyContext;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,11 @@ namespace Service.Contracts.Manager
         IKomentarService KomentarService { get; }
         IPemesanService PemesanService { get; }
         IPesananService PesananService { get; }
+
+        //
+
+        ICompanyDepartmentsService CompanyDepartmentsService { get; }
+        IM_CompanyService M_CompanyService { get; }
+        IM_DepartmentService M_DepartmentService { get; }
     }
 }

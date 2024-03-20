@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Service.Contracts
-build_property.ProjectDir = C:\Users\User\Documents\Development\Kolaborasi\Ekomerse\BE\dotnet-restapi-skeleton\Service.Contracts\
+build_property.ProjectDir = C:\Users\KAINE\Documents\Development\dotnet-restapi-skeleton\Service.Contracts\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
