@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6J8C9LzBRs6DL41h18ICnLsyzKhDgQPgf+KGQrUuzuhZZJbiz1QJRyFUbC2HTRWGTYx7nMRXu+Eb73lsNqit+Q==",
+  "dgSpecHash": "TmQRUg66pNgSjhwwWsU+90apz2CEzNRwR8N3hL5nPqhXoyBBiPtnGmg8m00tr/TbnaTEAFDVyYGg9d79ysUKWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj",
+  "projectFilePath": "C:\\Users\\KAINE\\Documents\\Development\\dotnet-restapi-skeleton\\Service.Contracts\\Service.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

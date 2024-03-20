@@ -27,19 +27,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\KAINE\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Contracts\\Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\KAINE\\Documents\\Development\\dotnet-restapi-skeleton\\Contracts\\Contracts.csproj",
       "projectName": "Contracts",
-      "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Contracts\\Contracts.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Contracts\\obj\\",
+      "projectPath": "C:\\Users\\KAINE\\Documents\\Development\\dotnet-restapi-skeleton\\Contracts\\Contracts.csproj",
+      "packagesPath": "C:\\Users\\KAINE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KAINE\\Documents\\Development\\dotnet-restapi-skeleton\\Contracts\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KAINE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +58,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\User\\Documents\\Development\\Kolaborasi\\Ekomerse\\BE\\dotnet-restapi-skeleton\\Entities\\Entities.csproj"
+            "C:\\Users\\KAINE\\Documents\\Development\\dotnet-restapi-skeleton\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\KAINE\\Documents\\Development\\dotnet-restapi-skeleton\\Entities\\Entities.csproj"
             }
           }
         }
@@ -63,6 +68,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -84,7 +94,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
